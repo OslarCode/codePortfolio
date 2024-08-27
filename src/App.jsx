@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import LoadingScreen from "./components/LoadingScreen";
 import MainContent from "./components/MainContent";
 import Navbar from "./components/Navbar";
+import PropTypes from "prop-types";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,7 +13,6 @@ function App() {
     setIsLoading(false);
   };
 
-  // Añadir o quitar la clase "dark" en el <html> cuando cambia el modo oscuro
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -34,5 +34,10 @@ function App() {
     </div>
   );
 }
+
+App.propTypes = {
+  darkMode: PropTypes.bool.isRequired,
+  setDarkMode: PropTypes.func.isRequired,
+};
 
 export default App;

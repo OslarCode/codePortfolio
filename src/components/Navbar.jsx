@@ -1,5 +1,6 @@
 // src/components/Navbar.jsx
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
@@ -147,6 +148,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       </div>
     </div>
   );
+};
+
+Navbar.propTypes = {
+  darkMode: PropTypes.bool.isRequired,
+  setDarkMode: PropTypes.func.isRequired,
 };
 
 export default Navbar;

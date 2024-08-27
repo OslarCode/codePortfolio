@@ -1,5 +1,4 @@
 // src/compnents/LoadingScreen.jsx
-// src/components/LoadingScreen.jsx
 import { useEffect, useRef, useState } from "react";
 import "./LoadingScreen.css"; // Asegúrate de tener este archivo CSS
 

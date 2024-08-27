@@ -1,5 +1,6 @@
 // src/compnents/LoadingScreen.jsx
 import { useEffect, useRef } from "react";
+import "./LoadingScreen.css"; // Crear un archivo CSS para efectos avanzados
 
 export default function LoadingScreen({ onLoaded }) {
   const canvasRef = useRef(null);
@@ -67,8 +68,8 @@ export default function LoadingScreen({ onLoaded }) {
 
     FX.gradient = (function () {
       const amount = 32;
-      const start = [255, 196, 0];
-      const end = [5, 239, 209];
+      const start = [245, 58, 105]; // Cyberpunk pink
+      const end = [0, 204, 255]; // Cyberpunk cyan
       const steps = [];
       const colors = [];
 
@@ -133,13 +134,30 @@ export default function LoadingScreen({ onLoaded }) {
   }, []);
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black z-50">
+    <div className="fixed inset-0 flex flex-col items-center justify-center bg-black z-50 text-center">
       <canvas ref={canvasRef} className="w-full h-full" />
+      <h1 className="neon-text glitch-effect absolute top-1/3 text-5xl md:text-6xl font-bold text-cyan-400 drop-shadow-lg">
+        Oslar-code Loading Portfolio
+      </h1>
       <button
         onClick={onLoaded}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        className="neon-button absolute bottom-4 right-4 flex items-center justify-center w-40 h-16 bg-transparent text-yellow-400 border-2 border-yellow-400 rounded-lg transform hover:scale-110 transition-transform shadow-neon"
       >
-        Saltar Intro
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-8 h-8"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+        <span className="ml-2">Saltar Intro</span>
       </button>
     </div>
   );

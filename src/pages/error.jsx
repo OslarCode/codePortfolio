@@ -1,7 +1,7 @@
 // src/pages/error.js
 
 import React from "react";
-import "./App.css";
+import "./error.css";
 
 const ErrorPage = () => {
   return (

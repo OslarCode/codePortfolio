@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const handleLoadingComplete = () => {
     setIsLoading(false);
@@ -13,7 +14,8 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      <div className={`dark:bg-gray-800 ${darkMode ? "dark" : ""}`}></div>
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       {isLoading ? (
         <LoadingScreen onLoaded={handleLoadingComplete} />
       ) : (

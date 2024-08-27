@@ -2,6 +2,7 @@
 import { useState } from "react";
 import LoadingScreen from "./components/LoadingScreen";
 import MainContent from "./components/MainContent";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <div>
+      <Navbar />
       {isLoading ? (
         <LoadingScreen onLoaded={handleLoadingComplete} />
       ) : (

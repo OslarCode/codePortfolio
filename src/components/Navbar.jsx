@@ -1,18 +1,32 @@
 // src/components/Navbar.jsx
-import React from "react";
+// src/components/Navbar.jsx
+import React, { useState } from "react";
+import { SunIcon, MoonIcon } from "@heroicons/react/24/outline"; // Importar iconos desde la versión 2
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = React.useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false); // Estado para el modo oscuro
 
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleThemeToggle = () => {
+    setDarkMode(!darkMode);
+    document.documentElement.classList.toggle("dark"); // Alternar clase dark en el documento
+  };
+
   return (
-    <div className="px-4 mx-auto max-w-7xl sm:px-6">
+    <div
+      className={`px-4 mx-auto max-w-7xl sm:px-6 ${
+        darkMode ? "bg-gray-900" : "bg-transparent"
+      }`}
+    >
       <div className="relative pt-6 pb-16 sm:pb-24">
         <nav
-          className="relative flex items-center justify-between sm:h-10 md:justify-center"
+          className={`relative flex items-center justify-between sm:h-10 md:justify-center ${
+            darkMode ? "text-white" : "text-gray-900"
+          }`}
           aria-label="Global"
         >
           <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
@@ -25,11 +39,12 @@ const Navbar = () => {
                   loading="lazy"
                   width="202"
                   height="40"
+                  alt="Company Logo"
                 />
               </a>
               <div className="flex items-center -mr-2 md:hidden">
                 <button
-                  className="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-50 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50"
+                  className="inline-flex items-center justify-center p-2 text-gray-400 bg-transparent rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50"
                   type="button"
                   aria-expanded={menuOpen}
                   onClick={handleMenuToggle}
@@ -39,14 +54,14 @@ const Navbar = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke="currentColor"
                     aria-hidden="true"
                     className="w-6 h-6"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M4 6h16M4 12h16M4 18h16"
                     ></path>
                   </svg>
@@ -55,38 +70,32 @@ const Navbar = () => {
             </div>
           </div>
           <div
-            className={`hidden md:flex md:space-x-10 list-none ${
+            className={`md:flex md:space-x-10 list-none ${
               menuOpen ? "block" : "hidden"
-            }`}
+            } md:block`}
           >
             <li>
-              <a
-                href="#"
-                className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
-                target=""
-              >
+              <a href="#" className="text-base font-normal hover:text-gray-900">
                 Proyectos
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
-                target=""
-              >
+              <a href="#" className="text-base font-normal hover:text-gray-900">
                 Contacto
               </a>
             </li>
           </div>
-          <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
-            <div className="inline-flex rounded-full shadow">
-              <div
-                href="#"
-                className="inline-flex items-center px-4 py-2 text-base text-gray-900 bg-white border border-transparent rounded-full cursor-pointer font-base hover:bg-gray-50"
-              >
-                Sign in
-              </div>
-            </div>
+          <div className="hidden md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+            <button
+              onClick={handleThemeToggle}
+              className="inline-flex items-center justify-center p-2 text-gray-500 bg-transparent rounded-full hover:text-gray-900"
+            >
+              {darkMode ? (
+                <SunIcon className="w-6 h-6" aria-hidden="true" />
+              ) : (
+                <MoonIcon className="w-6 h-6" aria-hidden="true" />
+              )}
+            </button>
           </div>
         </nav>
       </div>

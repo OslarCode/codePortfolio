@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* src/index.css */
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark {
+  background-color: #1a202c; /* Color de fondo oscuro */
+  color: #f7fafc; /* Color de texto claro */
+}
+
+.dark .bg-gray-900 {
+  background-color: #2d3748; /* Color de fondo oscuro para la navbar */
+}
+
+.dark .text-gray-900 {
+  color: #f7fafc; /* Color de texto claro */
+}
+
+.dark .text-gray-500 {
+  color: #e2e8f0; /* Color de texto gris claro */
+}

@@ -1,9 +1,11 @@
 // src/compnents/LoadingScreen.jsx
-import { useEffect, useRef } from "react";
-import "./LoadingScreen.css"; // Crear un archivo CSS para efectos avanzados
+// src/components/LoadingScreen.jsx
+import { useEffect, useRef, useState } from "react";
+import "./LoadingScreen.css"; // Asegúrate de tener este archivo CSS
 
 export default function LoadingScreen({ onLoaded }) {
   const canvasRef = useRef(null);
+  const [timerExpired, setTimerExpired] = useState(false);
 
   useEffect(() => {
     const FX = {};
@@ -127,19 +129,33 @@ export default function LoadingScreen({ onLoaded }) {
 
     FX.loop();
 
+    // Set a timer to trigger the loading screen end
+    const timer = setTimeout(() => {
+      setTimerExpired(true);
+      if (onLoaded) onLoaded();
+    }, 5000); // 5000 ms = 5 seconds
+
     // Cleanup on component unmount
     return () => {
       cancelAnimationFrame(animationFrameId);
+      clearTimeout(timer);
     };
-  }, []);
+  }, [onLoaded]);
 
   return (
-    <div className="fixed inset-0 flex flex-col items-center justify-center bg-black z-50">
+    <div
+      className={`fixed inset-0 flex flex-col items-center justify-center bg-black z-50 ${
+        timerExpired ? "hidden" : ""
+      }`}
+    >
       <h1 className="neon-text glitch-effect text-5xl mb-4">
         Oslar-code Loading Portfolio
       </h1>
       <button
-        onClick={onLoaded}
+        onClick={() => {
+          setTimerExpired(true);
+          if (onLoaded) onLoaded();
+        }}
         className="neon-text glitch-effect text-xl py-3 px-6 mt-2"
       >
         Insert Coin to Play

@@ -28,7 +28,7 @@ function App() {
         {isLoading ? (
           <LoadingScreen onLoaded={handleLoadingComplete} />
         ) : (
-          <MainContent />
+          <MainContent darkMode={darkMode} />
         )}
       </div>
     </div>

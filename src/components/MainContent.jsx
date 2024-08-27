@@ -1,8 +1,12 @@
 // src/components/MainContent.jsx
 import React from "react";
-const MainContent = () => {
+const MainContent = ({ darkMode }) => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-6 py-12 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-300">
+    <div
+      className={`flex flex-col items-center justify-center min-h-screen px-6 py-12 ${
+        darkMode ? "bg-gray-900" : "bg-gray-50"
+      } text-gray-800 ${darkMode ? "text-gray-300" : ""}`}
+    >
       {/* Hero Section */}
       <section id="hero" className="text-center">
         <h1 className="text-4xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">

@@ -16,7 +16,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <div
       className={`w-full px-4 sm:px-6 ${
-        darkMode ? "bg-gray-900" : "bg-transparent"
+        darkMode
+          ? "bg-gray-800 border-b border-gray-700"
+          : "bg-white border-b border-gray-200"
       } ${menuOpen ? "shadow-lg" : "shadow-none"} ${
         menuOpen ? "py-4" : "py-2"
       } fixed top-0 left-0 right-0 z-50`}
@@ -44,10 +46,24 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
         {/* Links for large screens */}
         <div className="hidden md:flex md:space-x-10">
-          <a href="#" className="text-base font-normal hover:text-gray-300">
+          <a
+            href="#"
+            className={`text-base font-normal ${
+              darkMode
+                ? "text-gray-300 hover:text-white"
+                : "text-gray-900 hover:text-gray-600"
+            }`}
+          >
             Proyectos
           </a>
-          <a href="#" className="text-base font-normal hover:text-gray-300">
+          <a
+            href="#"
+            className={`text-base font-normal ${
+              darkMode
+                ? "text-gray-300 hover:text-white"
+                : "text-gray-900 hover:text-gray-600"
+            }`}
+          >
             Contacto
           </a>
         </div>
@@ -56,7 +72,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div className="hidden md:flex md:items-center">
           <button
             onClick={handleThemeToggle}
-            className="inline-flex items-center justify-center p-2 text-gray-500 bg-transparent rounded-full hover:text-gray-300"
+            className={`inline-flex items-center justify-center p-2 rounded-full ${
+              darkMode
+                ? "text-gray-400 hover:text-white bg-gray-700"
+                : "text-gray-500 hover:text-gray-900 bg-gray-200"
+            }`}
           >
             {darkMode ? (
               <SunIcon className="w-6 h-6" aria-hidden="true" />
@@ -69,7 +89,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         {/* Hamburger Menu for small screens */}
         <div className="flex md:hidden">
           <button
-            className="inline-flex items-center justify-center p-2 text-gray-400 bg-transparent rounded-md hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50"
+            className={`inline-flex items-center justify-center p-2 rounded-md ${
+              darkMode
+                ? "text-gray-400 hover:text-white bg-gray-700"
+                : "text-gray-500 hover:text-gray-900 bg-gray-200"
+            } focus:outline-none focus:ring-2 focus:ring-inset ${
+              darkMode ? "focus:ring-gray-500" : "focus:ring-gray-300"
+            }`}
             type="button"
             aria-expanded={menuOpen}
             onClick={handleMenuToggle}
@@ -98,10 +124,24 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div
         className={`${menuOpen ? "block" : "hidden"} md:hidden mt-4 space-y-4`}
       >
-        <a href="#" className="block text-base font-normal hover:text-gray-300">
+        <a
+          href="#"
+          className={`block text-base font-normal ${
+            darkMode
+              ? "text-gray-300 hover:text-white"
+              : "text-gray-900 hover:text-gray-600"
+          }`}
+        >
           Proyectos
         </a>
-        <a href="#" className="block text-base font-normal hover:text-gray-300">
+        <a
+          href="#"
+          className={`block text-base font-normal ${
+            darkMode
+              ? "text-gray-300 hover:text-white"
+              : "text-gray-900 hover:text-gray-600"
+          }`}
+        >
           Contacto
         </a>
       </div>

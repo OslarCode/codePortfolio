@@ -12,6 +12,7 @@ function App() {
     setIsLoading(false);
   };
 
+  // Añadir o quitar la clase "dark" en el <html> cuando cambia el modo oscuro
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");

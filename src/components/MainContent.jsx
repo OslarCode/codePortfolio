@@ -1,5 +1,6 @@
 // src/components/MainContent.jsx
 import React from "react";
+
 const MainContent = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-6 py-12 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-300">

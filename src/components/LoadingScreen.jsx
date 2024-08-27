@@ -147,8 +147,8 @@ export default function LoadingScreen({ onLoaded }) {
         timerExpired ? "hidden" : ""
       }`}
     >
-      <h1 className="neon-text glitch-effect text-5xl mb-4">
-        Oslar-code Loading Portfolio
+      <h1 className="neon-text glitch-effect text-5xl mb-4 text-center">
+        Oslar code Loading Portfolio
       </h1>
       <button
         onClick={() => {
@@ -157,7 +157,7 @@ export default function LoadingScreen({ onLoaded }) {
         }}
         className="neon-text glitch-effect text-xl py-3 px-6 mt-2"
       >
-        Insert Coin to Play
+        Press F5 to Insert Coin
       </button>
       <canvas ref={canvasRef} className="w-full h-full absolute inset-0" />
     </div>

@@ -134,31 +134,17 @@ export default function LoadingScreen({ onLoaded }) {
   }, []);
 
   return (
-    <div className="fixed inset-0 flex flex-col items-center justify-center bg-black z-50 text-center">
-      <canvas ref={canvasRef} className="w-full h-full" />
-      <h1 className="neon-text glitch-effect absolute top-1/3 text-5xl md:text-6xl font-bold text-cyan-400 drop-shadow-lg">
+    <div className="fixed inset-0 flex flex-col items-center justify-center bg-black z-50">
+      <h1 className="neon-text glitch-effect text-5xl mb-4">
         Oslar-code Loading Portfolio
       </h1>
       <button
         onClick={onLoaded}
-        className="neon-button absolute bottom-4 right-4 flex items-center justify-center w-40 h-16 bg-transparent text-yellow-400 border-2 border-yellow-400 rounded-lg transform hover:scale-110 transition-transform shadow-neon"
+        className="neon-text glitch-effect text-xl py-3 px-6 mt-2"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          className="w-8 h-8"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-        <span className="ml-2">Saltar Intro</span>
+        Insert Coin to Play
       </button>
+      <canvas ref={canvasRef} className="w-full h-full absolute inset-0" />
     </div>
   );
 }

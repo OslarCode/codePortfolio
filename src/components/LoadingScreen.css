@@ -34,25 +34,3 @@
       -2px -2px 5px rgba(0, 255, 0, 0.75);
   }
 }
-
-.neon-button {
-  position: relative;
-  border-radius: 50%;
-}
-
-.neon-button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid #ff0;
-  opacity: 0.5;
-  filter: blur(10px);
-}
-
-.shadow-neon {
-  box-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0;
-}

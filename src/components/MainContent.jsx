@@ -11,10 +11,10 @@ const MainContent = ({ darkMode }) => {
       {/* Hero Section */}
       <section id="hero" className="text-center">
         <h1 className="text-4xl font-semibold text-blue-700 dark:text-blue-400 mt-4 mb-4">
-          ¡Hola, soy [Tu Nombre]!
+          ¡Hola, soy Oslar!
         </h1>
-        <p className="text-lg max-w-3xl mx-auto text-gray-600 dark:text-gray-300">
-          Soy un desarrollador frontend con más de [X] años de experiencia en la
+        <p className="text-lg max-w-3xl mx-auto text-gray-900 dark:text-gray-300">
+          Soy un desarrollador frontend con más de 5 años de experiencia en la
           creación de interfaces web modernas y funcionales. Mi trayectoria como
           freelance me ha permitido colaborar con una variedad de clientes,
           desde startups hasta empresas consolidadas, ayudándoles a llevar sus
@@ -230,7 +230,7 @@ const MainContent = ({ darkMode }) => {
         <h2 className="text-3xl font-semibold text-blue-700 dark:text-blue-400 mb-6">
           Contacto
         </h2>
-        <p className="text-lg mb-4 text-gray-600 dark:text-gray-300">
+        <p className="text-lg mb-4 text-gray-900 dark:text-gray-300">
           Estoy disponible para nuevas oportunidades y colaboraciones. Si estás
           interesado en trabajar conmigo o simplemente quieres decir hola, no
           dudes en contactarme.

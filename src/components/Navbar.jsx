@@ -15,11 +15,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <div
-      className={`px-4 mx-auto max-w-7xl sm:px-6 ${
-        darkMode ? "bg-gray-900 dark:bg-gray-900" : "bg-transparent"
+      className={`w-full px-4 sm:px-6 ${
+        darkMode ? "bg-gray-900" : "bg-transparent"
       } ${menuOpen ? "shadow-lg" : "shadow-none"} ${
         menuOpen ? "py-4" : "py-2"
-      }`}
+      } fixed top-0 left-0 right-0 z-50`}
     >
       <nav
         className={`flex items-center justify-between ${
@@ -44,10 +44,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
         {/* Links for large screens */}
         <div className="hidden md:flex md:space-x-10">
-          <a href="#" className="text-base font-normal hover:text-gray-900">
+          <a href="#" className="text-base font-normal hover:text-gray-300">
             Proyectos
           </a>
-          <a href="#" className="text-base font-normal hover:text-gray-900">
+          <a href="#" className="text-base font-normal hover:text-gray-300">
             Contacto
           </a>
         </div>
@@ -56,7 +56,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div className="hidden md:flex md:items-center">
           <button
             onClick={handleThemeToggle}
-            className="inline-flex items-center justify-center p-2 text-gray-500 bg-transparent rounded-full hover:text-gray-900"
+            className="inline-flex items-center justify-center p-2 text-gray-500 bg-transparent rounded-full hover:text-gray-300"
           >
             {darkMode ? (
               <SunIcon className="w-6 h-6" aria-hidden="true" />
@@ -98,10 +98,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div
         className={`${menuOpen ? "block" : "hidden"} md:hidden mt-4 space-y-4`}
       >
-        <a href="#" className="block text-base font-normal hover:text-gray-900">
+        <a href="#" className="block text-base font-normal hover:text-gray-300">
           Proyectos
         </a>
-        <a href="#" className="block text-base font-normal hover:text-gray-900">
+        <a href="#" className="block text-base font-normal hover:text-gray-300">
           Contacto
         </a>
       </div>

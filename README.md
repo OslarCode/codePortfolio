@@ -14,11 +14,9 @@ oslar-code-portfolio/
 ├── public/
 │ └── index.html
 ├── src/
-│ ├── assets/ # Archivos estáticos como imágenes, fuentes, etc.
-│ ├── components/ # Componentes React reutilizables
-│ ├── pages/ # Componentes de páginas completas
-│ ├── styles/ # Archivos de estilo, incluyendo Tailwind CSS
-│ ├── about.mdx # Ejemplo de archivo MDX
+│ ├── components/
+│ │ ├── LoadingScreen.jsx # Pantalla de carga con BoltLoader
+│ │ ├── MainContent.jsx # Contenido principal de tu portfolio
 │ ├── App.jsx # Componente principal de la aplicación
 │ ├── index.css # Estilos globales
 │ ├── main.jsx # Punto de entrada de la aplicación

@@ -36,7 +36,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <span className="sr-only">Company Name</span>
             <img
               className="w-auto h-8 sm:h-10"
-              src="https://www.svgrepo.com/show/448244/pack.svg"
+              src="web_designer_boy.png"
               loading="lazy"
               width="202"
               height="40"

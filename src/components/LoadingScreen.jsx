@@ -157,7 +157,7 @@ export default function LoadingScreen({ onLoaded }) {
         }}
         className="neon-text glitch-effect text-xl py-3 px-6 mt-2"
       >
-        Press F5 to Insert Coin
+        Insert Coin to Play
       </button>
       <canvas ref={canvasRef} className="w-full h-full absolute inset-0" />
     </div>

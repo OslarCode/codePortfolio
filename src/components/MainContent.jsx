@@ -1,5 +1,6 @@
 // src/components/MainContent.jsx
 import React from "react";
+import Divider from "./Divider";
 
 const MainContent = ({ darkMode }) => {
   return (
@@ -34,7 +35,7 @@ const MainContent = ({ darkMode }) => {
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Project 1 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
             <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
               E-commerce React Store
             </h3>
@@ -58,7 +59,7 @@ const MainContent = ({ darkMode }) => {
           </div>
 
           {/* Project 2 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
             <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
               Portfolio Personal
             </h3>
@@ -82,7 +83,7 @@ const MainContent = ({ darkMode }) => {
           </div>
 
           {/* Project 3 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
             <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
               Dashboard de Análisis de Datos
             </h3>
@@ -106,7 +107,7 @@ const MainContent = ({ darkMode }) => {
           </div>
 
           {/* Project 4 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
             <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
               Aplicación de Tareas
             </h3>
@@ -130,7 +131,7 @@ const MainContent = ({ darkMode }) => {
           </div>
 
           {/* Project 5 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
             <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
               Plataforma de Blog
             </h3>
@@ -153,7 +154,7 @@ const MainContent = ({ darkMode }) => {
           </div>
 
           {/* Project 6 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
             <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
               Aplicación de Seguimiento de Fitness
             </h3>
@@ -177,7 +178,7 @@ const MainContent = ({ darkMode }) => {
           </div>
 
           {/* Project 7 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
             <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
               Sistema de Reservas
             </h3>
@@ -201,7 +202,7 @@ const MainContent = ({ darkMode }) => {
           </div>
 
           {/* Project 8 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
             <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
               Aplicación de Encuestas
             </h3>
@@ -222,8 +223,71 @@ const MainContent = ({ darkMode }) => {
               .
             </p>
           </div>
+
+          {/* Project 9 */}
+          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
+            <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
+              Aplicación de Productividad
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300">
+              TodoList Pro es una aplicación de productividad que te permite
+              gestionar tus tareas y proyectos de manera eficiente. La
+              aplicación está diseñada para ayudarte a organizar tus tareas
+              diarias, semanales y mensuales, y a mantener un registro de tus
+              progresos.. Puedes verlo en{" "}
+              <a
+                href="https://survey-app-example.com"
+                className="text-blue-600 dark:text-blue-400 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                aquí
+              </a>
+              .
+            </p>
+          </div>
         </div>
       </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="mt-12 text-center w-full">
+        <h2 className="text-3xl font-semibold text-blue-700 dark:text-blue-400 mb-6">
+          Habilidades
+        </h2>
+
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-col items-center">
+            <img src="./icons/html5.svg" alt="HTML5" className="w-8 h-8" />
+            <p className="mt-2 text-lg font-medium">HTML5</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="./icons/css3.svg" alt="HTML5" className="w-8 h-8" />
+            <p className="mt-2 text-lg font-medium">CSS3</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="./icons/javaScript.svg" alt="HTML5" className="w-8 h-8" />
+            <p className="mt-2 text-lg font-medium">JavaScript</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="./icons/react.svg" alt="HTML5" className="w-8 h-8" />
+            <p className="mt-2 text-lg font-medium">React</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="./icons/tailwind.svg" alt="HTML5" className="w-8 h-8" />
+            <p className="mt-2 text-lg font-medium">Tailwind CSS</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="./icons/node.svg" alt="HTML5" className="w-8 h-8" />
+            <p className="mt-2 text-lg font-medium">Node.js</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="./icons/git.svg" alt="HTML5" className="w-8 h-8" />
+            <p className="mt-2 text-lg font-medium">Git</p>
+          </div>
+        </div>
+      </section>
+
+      <Divider color="blue-500" thickness="2px" marginY="8" />
 
       {/* Contact Section */}
       <section id="contact" className="mt-12 text-center w-full">
@@ -241,6 +305,18 @@ const MainContent = ({ darkMode }) => {
         >
           Envíame un correo
         </a>
+      </section>
+
+      {/* Mentoring Section */}
+      <section id="mentoring" className="mt-12 text-center w-full">
+        <h2 className="text-3xl font-semibold text-blue-700 dark:text-blue-400 mb-6">
+          Mentoría y Educación
+        </h2>
+        <p className="text-lg max-w-3xl mx-auto text-gray-900 dark:text-gray-300">
+          Además de mi experiencia como desarrollador, tengo una sólida
+          formación en mentoría y educación en informática y nuevas
+          tecnologías...
+        </p>
       </section>
     </div>
   );

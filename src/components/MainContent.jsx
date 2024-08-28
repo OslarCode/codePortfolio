@@ -1,8 +1,83 @@
 // src/components/MainContent.jsx
 import React from "react";
-import Contacto from "./Contacto";
+import Project from "./Project";
 
 const MainContent = ({ darkMode }) => {
+  const projects = [
+    {
+      title: "E-commerce React Store",
+      description:
+        "Desarrollo de una tienda en línea completa utilizando React, Redux para la gestión del estado y Tailwind CSS para el diseño. Implementé funcionalidades como el carrito de compras, filtros de productos y un sistema de pago seguro. Este proyecto ayudó a aumentar las ventas en un 30% al proporcionar una experiencia de usuario fluida y moderna.",
+      imageSrc: "/images/projects/ecommerce-react-store.jpg",
+      link: "https://ecommerce-example.com",
+      altText: "E-commerce React Store",
+    },
+    {
+      title: "Portfolio Personal",
+      description:
+        "Creación de un sitio web de portfolio para un diseñador gráfico utilizando React y Tailwind CSS. El sitio destaca los trabajos del diseñador con una galería interactiva y una sección de blog. Implementé una integración con un CMS headless para la gestión de contenido y optimicé el sitio para un rendimiento rápido y una carga eficiente. ",
+      imageSrc: "/images/projects/ecommerce-react-store.jpg",
+      link: "https://ecommerce-example.com",
+      altText: "E-commerce React Store",
+    },
+    {
+      title: "Dashboard de Análisis de Datos",
+      description:
+        "Desarrollo de un dashboard interactivo para la visualización de datos en tiempo real utilizando React y D3.js. El proyecto incluía gráficos dinámicos, tablas de datos y filtros avanzados para analizar grandes volúmenes de información. Implementé una API RESTful para la integración de datos y aseguré un rendimiento óptimo con técnicas de carga diferida.",
+      imageSrc: "/images/projects/ecommerce-react-store.jpg",
+      link: "https://ecommerce-example.com",
+      altText: "E-commerce React Store",
+    },
+    {
+      title: "Aplicación de Tareas",
+      description:
+        "Implementación de una aplicación de gestión de tareas con una interfaz intuitiva usando React y Tailwind CSS. Incluye funcionalidades como agregar, editar y eliminar tareas, así como establecer recordatorios. Utilicé localStorage para la persistencia de datos y realicé pruebas exhaustivas para asegurar la robustez de la aplicación",
+      imageSrc: "/images/projects/ecommerce-react-store.jpg",
+      link: "https://ecommerce-example.com",
+      altText: "E-commerce React Store",
+    },
+    {
+      title: "Plataforma de Blog",
+      description:
+        "Desarrollo de una plataforma de blogging donde los usuarios pueden publicar, editar y eliminar sus artículos. Utilicé React para la interfaz y Firebase para la autenticación y almacenamiento de datos. El proyecto incluye una función de comentarios y un sistema de categorías para facilitar la navegación.",
+      imageSrc: "/images/projects/ecommerce-react-store.jpg",
+      link: "https://ecommerce-example.com",
+      altText: "E-commerce React Store",
+    },
+    {
+      title: "Aplicación de Seguimiento de Fitness",
+      description:
+        "Creación de una aplicación para el seguimiento de actividades físicas y objetivos de fitness. La aplicación, construida con React y Tailwind CSS, permite a los usuarios registrar sus entrenamientos, establecer metas y realizar un seguimiento del progreso. Incluye gráficos interactivos para visualizar el rendimiento.",
+      imageSrc: "/images/projects/ecommerce-react-store.jpg",
+      link: "https://ecommerce-example.com",
+      altText: "E-commerce React Store",
+    },
+    {
+      title: "Sistema de Reservas",
+      description:
+        "Desarrollo de un sistema de reservas para una cadena de restaurantes. Implementé una interfaz de usuario amigable con React y una API para la gestión de reservas en tiempo real. La solución incluye una vista de calendario, confirmaciones por correo electrónico y un panel de administración para gestionar las reservas.",
+      imageSrc: "/images/projects/ecommerce-react-store.jpg",
+      link: "https://ecommerce-example.com",
+      altText: "E-commerce React Store",
+    },
+    {
+      title: "Aplicación de Encuestas",
+      description:
+        "Desarrollo de una aplicación para la creación y gestión de encuestas. Utilicé React para la interfaz y una base de datos NoSQL para almacenar las respuestas. La aplicación permite a los usuarios crear encuestas personalizadas, recopilar respuestas y ver estadísticas en tiempo real",
+      imageSrc: "/images/projects/ecommerce-react-store.jpg",
+      link: "https://ecommerce-example.com",
+      altText: "E-commerce React Store",
+    },
+    {
+      title: "Aplicación de Productividad",
+      description:
+        "TodoList Pro es una aplicación de productividad que te permite gestionar tus tareas y proyectos de manera eficiente. La aplicación está diseñada para ayudarte a organizar tus tareas diarias, semanales y mensuales, y a mantener un registro de tus progresos",
+      imageSrc: "/images/projects/ecommerce-react-store.jpg",
+      link: "https://ecommerce-example.com",
+      altText: "E-commerce React Store",
+    },
+    // ... Añade los demás proyectos aquí de la misma manera
+  ];
   return (
     <div
       className={`flex flex-col items-center justify-center min-h-screen px-6 py-12 ${
@@ -36,302 +111,17 @@ const MainContent = ({ darkMode }) => {
           Proyectos Destacados
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {/* Project 1 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <div className="flex flex-col lg:flex-row">
-              <img
-                src="/images/projects/ecommerce-react-store.jpg"
-                alt="E-commerce React Store"
-                className="w-full lg:w-1/3 rounded-lg object-cover mb-4 lg:mb-0 lg:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-                  E-commerce React Store
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300">
-                  Desarrollo de una tienda en línea completa utilizando React,
-                  Redux para la gestión del estado y Tailwind CSS para el
-                  diseño. Implementé funcionalidades como el carrito de compras,
-                  filtros de productos y un sistema de pago seguro. Este
-                  proyecto ayudó a aumentar las ventas en un 30% al proporcionar
-                  una experiencia de usuario fluida y moderna. Puedes verlo en
-                  acción{" "}
-                  <a
-                    href="https://ecommerce-example.com"
-                    className="text-blue-600 dark:text-blue-400 underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    aquí
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Project 2 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <div className="flex flex-col lg:flex-row">
-              <img
-                src="/images/projects/portfolio-personal.jpg"
-                alt="Portfolio Personal"
-                className="w-full lg:w-1/3 rounded-lg object-cover mb-4 lg:mb-0 lg:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-                  Portfolio Personal
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300">
-                  Creación de un sitio web de portfolio para un diseñador
-                  gráfico utilizando React y Tailwind CSS. El sitio destaca los
-                  trabajos del diseñador con una galería interactiva y una
-                  sección de blog. Implementé una integración con un CMS
-                  headless para la gestión de contenido y optimicé el sitio para
-                  un rendimiento rápido y una carga eficiente. Puedes verlo en{" "}
-                  <a
-                    href="https://portfolio-example.com"
-                    className="text-blue-600 dark:text-blue-400 underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    aquí
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Project 3 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <div className="flex flex-col lg:flex-row">
-              <img
-                src="/images/projects/data-analysis-dashboard.jpg"
-                alt="Dashboard de Análisis de Datos"
-                className="w-full lg:w-1/3 rounded-lg object-cover mb-4 lg:mb-0 lg:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-                  Dashboard de Análisis de Datos
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300">
-                  Desarrollo de un dashboard interactivo para la visualización
-                  de datos en tiempo real utilizando React y D3.js. El proyecto
-                  incluía gráficos dinámicos, tablas de datos y filtros
-                  avanzados para analizar grandes volúmenes de información.
-                  Implementé una API RESTful para la integración de datos y
-                  aseguré un rendimiento óptimo con técnicas de carga diferida.
-                  Puedes ver una demo{" "}
-                  <a
-                    href="https://dashboard-example.com"
-                    className="text-blue-600 dark:text-blue-400 underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    aquí
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Project 4 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <div className="flex flex-col lg:flex-row">
-              <img
-                src="/images/projects/tasks-app.jpg"
-                alt="Aplicación de Tareas"
-                className="w-full lg:w-1/3 rounded-lg object-cover mb-4 lg:mb-0 lg:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-                  Aplicación de Tareas
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300">
-                  Implementación de una aplicación de gestión de tareas con una
-                  interfaz intuitiva usando React y Tailwind CSS. Incluye
-                  funcionalidades como agregar, editar y eliminar tareas, así
-                  como establecer recordatorios. Utilicé localStorage para la
-                  persistencia de datos y realicé pruebas exhaustivas para
-                  asegurar la robustez de la aplicación. Puedes probarla{" "}
-                  <a
-                    href="https://tasks-app-example.com"
-                    className="text-blue-600 dark:text-blue-400 underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    aquí
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Project 5 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <div className="flex flex-col lg:flex-row">
-              <img
-                src="/images/projects/blog-platform.jpg"
-                alt="Plataforma de Blog"
-                className="w-full lg:w-1/3 rounded-lg object-cover mb-4 lg:mb-0 lg:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-                  Plataforma de Blog
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300">
-                  Desarrollo de una plataforma de blogging donde los usuarios
-                  pueden publicar, editar y eliminar sus artículos. Utilicé
-                  React para la interfaz y Firebase para la autenticación y
-                  almacenamiento de datos. El proyecto incluye una función de
-                  comentarios y un sistema de categorías para facilitar la
-                  navegación. Puedes ver el proyecto{" "}
-                  <a
-                    href="https://blog-platform-example.com"
-                    className="text-blue-600 dark:text-blue-400 underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    aquí
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Project 6 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <div className="flex flex-col lg:flex-row">
-              <img
-                src="/images/projects/fitness-tracker.jpg"
-                alt="Aplicación de Seguimiento de Fitness"
-                className="w-full lg:w-1/3 rounded-lg object-cover mb-4 lg:mb-0 lg:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-                  Aplicación de Seguimiento de Fitness
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300">
-                  Creación de una aplicación para el seguimiento de actividades
-                  físicas y objetivos de fitness. La aplicación, construida con
-                  React y Tailwind CSS, permite a los usuarios registrar sus
-                  entrenamientos, establecer metas y realizar un seguimiento del
-                  progreso. Incluye gráficos interactivos para visualizar el
-                  rendimiento. Puedes probar la aplicación{" "}
-                  <a
-                    href="https://fitness-tracker-example.com"
-                    className="text-blue-600 dark:text-blue-400 underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    aquí
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Project 7 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <div className="flex flex-col lg:flex-row">
-              <img
-                src="/images/projects/reservation-system.jpg"
-                alt="Sistema de Reservas"
-                className="w-full lg:w-1/3 rounded-lg object-cover mb-4 lg:mb-0 lg:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-                  Sistema de Reservas
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300">
-                  Desarrollo de un sistema de reservas para una cadena de
-                  restaurantes. Implementé una interfaz de usuario amigable con
-                  React y una API para la gestión de reservas en tiempo real. La
-                  solución incluye una vista de calendario, confirmaciones por
-                  correo electrónico y un panel de administración para gestionar
-                  las reservas. Puedes ver el proyecto{" "}
-                  <a
-                    href="https://reservation-system-example.com"
-                    className="text-blue-600 dark:text-blue-400 underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    aquí
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Project 8 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <div className="flex flex-col lg:flex-row">
-              <img
-                src="/images/projects/survey-app.jpg"
-                alt="Aplicación de Encuestas"
-                className="w-full lg:w-1/3 rounded-lg object-cover mb-4 lg:mb-0 lg:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-                  Aplicación de Encuestas
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300">
-                  Desarrollo de una aplicación para la creación y gestión de
-                  encuestas. Utilicé React para la interfaz y una base de datos
-                  NoSQL para almacenar las respuestas. La aplicación permite a
-                  los usuarios crear encuestas personalizadas, recopilar
-                  respuestas y ver estadísticas en tiempo real. Puedes verlo en{" "}
-                  <a
-                    href="https://survey-app-example.com"
-                    className="text-blue-600 dark:text-blue-400 underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    aquí
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Project 9 */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <div className="flex flex-col lg:flex-row">
-              <img
-                src="/images/projects/productivity-app.jpg"
-                alt="Aplicación de Productividad"
-                className="w-full lg:w-1/3 rounded-lg object-cover mb-4 lg:mb-0 lg:mr-6"
-              />
-              <div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
-                  Aplicación de Productividad
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300">
-                  TodoList Pro es una aplicación de productividad que te permite
-                  gestionar tus tareas y proyectos de manera eficiente. La
-                  aplicación está diseñada para ayudarte a organizar tus tareas
-                  diarias, semanales y mensuales, y a mantener un registro de
-                  tus progresos. Puedes verlo en{" "}
-                  <a
-                    href="https://productivity-app-example.com"
-                    className="text-blue-600 dark:text-blue-400 underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    aquí
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-          </div>
+          {/* Projects 1 */}
+          {projects.map((project, index) => (
+            <Project
+              key={index}
+              title={project.title}
+              description={project.description}
+              imageSrc={project.imageSrc}
+              link={project.link}
+              altText={project.altText}
+            />
+          ))}
         </div>
       </section>
 

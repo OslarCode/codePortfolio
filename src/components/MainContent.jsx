@@ -323,9 +323,6 @@ const MainContent = ({ darkMode }) => {
           </div>
         </div>
       </section>
-
-      {/* Contact Section */}
-      <Contacto />
     </div>
   );
 };

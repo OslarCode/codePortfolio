@@ -13,18 +13,20 @@ const MainContent = ({ darkMode }) => {
         <h1 className="text-4xl font-semibold text-blue-700 dark:text-blue-400 mt-4 mb-4">
           ¡Hola, soy Oslar!
         </h1>
-        <p className="text-lg max-w-3xl mx-auto text-gray-900 dark:text-gray-300">
-          Soy un desarrollador frontend con más de 5 años de experiencia en la
-          creación de interfaces web modernas y funcionales. Mi trayectoria como
-          freelance me ha permitido colaborar con una variedad de clientes,
-          desde startups hasta empresas consolidadas, ayudándoles a llevar sus
-          ideas a la realidad digital. Estoy especializado en tecnologías como
-          React, Tailwind CSS y JavaScript, y me apasiona construir soluciones
-          intuitivas y atractivas que mejoren la experiencia del usuario. Cada
-          proyecto es una oportunidad para aprender y crecer, y me esfuerzo por
-          estar al día con las últimas tendencias y mejores prácticas en
-          desarrollo web.
-        </p>
+        <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6">
+          <p className="text-lg max-w-3xl mx-auto text-gray-900 dark:text-gray-300">
+            Soy un desarrollador frontend con más de 5 años de experiencia en la
+            creación de interfaces web modernas y funcionales. Mi trayectoria
+            como freelance me ha permitido colaborar con una variedad de
+            clientes, desde startups hasta empresas consolidadas, ayudándoles a
+            llevar sus ideas a la realidad digital. Estoy especializado en
+            tecnologías como React, Tailwind CSS y JavaScript, y me apasiona
+            construir soluciones intuitivas y atractivas que mejoren la
+            experiencia del usuario. Cada proyecto es una oportunidad para
+            aprender y crecer, y me esfuerzo por estar al día con las últimas
+            tendencias y mejores prácticas en desarrollo web.
+          </p>
+        </div>
       </section>
 
       {/* Projects Section */}

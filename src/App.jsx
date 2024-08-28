@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import LoadingScreen from "./components/LoadingScreen";
 import MainContent from "./components/MainContent";
 import Navbar from "./components/Navbar";
+import Contacto from "./pages/contacto";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PropTypes from "prop-types";
 
 function App() {
@@ -22,16 +24,22 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className={`${darkMode ? "dark" : ""}`}>
-      <div className="min-h-screen bg-white dark:bg-gray-900">
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        {isLoading ? (
-          <LoadingScreen onLoaded={handleLoadingComplete} />
-        ) : (
-          <MainContent darkMode={darkMode} />
-        )}
+    <Router>
+      <div className={`${darkMode ? "dark" : ""}`}>
+        <div className="min-h-screen bg-white dark:bg-gray-900">
+          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+          {isLoading ? (
+            <LoadingScreen onLoaded={handleLoadingComplete} />
+          ) : (
+            <Routes>
+              <Route path="/" element={<MainContent darkMode={darkMode} />} />
+              <Route path="/contacto" element={<Contacto />} />{" "}
+              {/* Añade la ruta para Contacto */}
+            </Routes>
+          )}
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom"; // Usa Link para navegación
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -48,8 +48,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
         {/* Links for large screens */}
         <div className="hidden md:flex md:space-x-10">
-          <Link
-            to="/"
+          <a
+            href="#"
             className={`text-base font-normal ${
               darkMode
                 ? "text-gray-300 hover:text-white"
@@ -57,17 +57,19 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             }`}
           >
             Proyectos
-          </Link>
-          <Link
-            to="/contacto"
-            className={`text-base font-normal ${
+          </a>
+          <ScrollLink
+            to="contacto"
+            smooth={true}
+            duration={500}
+            className={`cursor-pointer text-base font-normal ${
               darkMode
                 ? "text-gray-300 hover:text-white"
                 : "text-gray-900 hover:text-gray-600"
             }`}
           >
             Contacto
-          </Link>
+          </ScrollLink>
         </div>
 
         {/* Dark Mode Toggle for large screens */}
@@ -126,8 +128,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div
         className={`${menuOpen ? "block" : "hidden"} md:hidden mt-4 space-y-4`}
       >
-        <Link
-          to="/"
+        <a
+          href="#"
           className={`block text-base font-normal ${
             darkMode
               ? "text-gray-300 hover:text-white"
@@ -135,17 +137,19 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           }`}
         >
           Proyectos
-        </Link>
-        <Link
-          to="/contacto"
-          className={`block text-base font-normal ${
+        </a>
+        <ScrollLink
+          to="contacto"
+          smooth={true}
+          duration={500}
+          className={`cursor-pointer block text-base font-normal ${
             darkMode
               ? "text-gray-300 hover:text-white"
               : "text-gray-900 hover:text-gray-600"
           }`}
         >
           Contacto
-        </Link>
+        </ScrollLink>
       </div>
     </div>
   );

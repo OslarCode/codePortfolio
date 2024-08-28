@@ -1,5 +1,6 @@
 // src/components/MainContent.jsx
 import React from "react";
+import ContactForm from "./ContactForm";
 
 const MainContent = ({ darkMode }) => {
   return (
@@ -340,6 +341,7 @@ const MainContent = ({ darkMode }) => {
           Envíame un correo
         </a>
       </section>
+      <ContactForm darkMode={darkMode} />
     </div>
   );
 };

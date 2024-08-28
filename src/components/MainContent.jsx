@@ -1,6 +1,6 @@
 // src/components/MainContent.jsx
 import React from "react";
-import ContactForm from "./ContactForm";
+import Contacto from "./Contacto";
 
 const MainContent = ({ darkMode }) => {
   return (
@@ -325,23 +325,7 @@ const MainContent = ({ darkMode }) => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="mt-12 text-center w-full">
-        <h2 className="text-3xl font-semibold text-blue-700 dark:text-blue-400 mb-6">
-          Contacto
-        </h2>
-        <p className="text-lg mb-4 text-gray-900 dark:text-gray-300">
-          Estoy disponible para nuevas oportunidades y colaboraciones. Si estás
-          interesado en trabajar conmigo o simplemente quieres decir hola, no
-          dudes en contactarme.
-        </p>
-        <a
-          href="mailto:tucorreo@ejemplo.com"
-          className="inline-block bg-blue-600 dark:bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-500 dark:hover:bg-blue-400 transition duration-300"
-        >
-          Envíame un correo
-        </a>
-      </section>
-      <ContactForm darkMode={darkMode} />
+      <Contacto />
     </div>
   );
 };

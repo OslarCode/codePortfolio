@@ -1,4 +1,4 @@
-![Captura de Pantalla](assets/screencapture-localhost-5173-2024-08-29-21_18_48.png)
+
 
 ---
 

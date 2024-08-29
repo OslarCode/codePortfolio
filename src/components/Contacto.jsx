@@ -12,13 +12,13 @@ const Contacto = ({ darkMode }) => {
     >
       <div className="mb-12 flex w-full flex-col text-center">
         <h1
-          className={`title-font mb-6 text-3xl font-semibold ${
+          className={`title-font mb-6 text-6xl font-Playfair ${
             darkMode ? "text-gray-100" : "text-gray-800"
           } sm:text-3xl`}
         >
           Contactame
         </h1>
-        <p className="mx-auto text-base leading-relaxed lg:w-2/3">
+        <p className="mx-auto text-base font-Madefor leading-relaxed lg:w-2/3">
           Estoy disponible para nuevas oportunidades y colaboraciones. Si estás
           interesado en trabajar conmigo o simplemente quieres decir hola, no
           dudes en contactarme.
@@ -49,8 +49,8 @@ const Contacto = ({ darkMode }) => {
                 htmlFor="name"
                 className={`absolute left-3 -top-6 text-sm leading-7 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base ${
                   darkMode
-                    ? "peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-gray-500 peer-focus:text-blue-400"
-                    : "peer-placeholder-shown:bg-white peer-placeholder-shown:text-gray-500 peer-focus:text-blue-400"
+                    ? "peer-placeholder-shown:text-gray-500 peer-focus:text-blue-400"
+                    : "peer-placeholder-shown:text-gray-500 peer-focus:text-blue-400"
                 }`}
               >
                 Name
@@ -79,8 +79,8 @@ const Contacto = ({ darkMode }) => {
                 htmlFor="email"
                 className={`absolute left-3 -top-6 text-sm leading-7 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base ${
                   darkMode
-                    ? "peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-gray-500 peer-focus:text-blue-400"
-                    : "peer-placeholder-shown:bg-white peer-placeholder-shown:text-gray-500 peer-focus:text-blue-400"
+                    ? "peer-placeholder-shown:text-gray-500 peer-focus:text-blue-400"
+                    : "peer-placeholder-shown:text-gray-500 peer-focus:text-blue-400"
                 }`}
               >
                 Email
@@ -108,8 +108,8 @@ const Contacto = ({ darkMode }) => {
                 htmlFor="message"
                 className={`absolute left-3 -top-6 text-sm leading-7 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base ${
                   darkMode
-                    ? "peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-gray-500 peer-focus:text-blue-400"
-                    : "peer-placeholder-shown:bg-white peer-placeholder-shown:text-gray-500 peer-focus:text-blue-400"
+                    ? "peer-placeholder-shown:text-gray-500 peer-focus:text-blue-400"
+                    : "peer-placeholder-shown:text-gray-500 peer-focus:text-blue-400"
                 }`}
               >
                 Message
@@ -121,8 +121,8 @@ const Contacto = ({ darkMode }) => {
             <button
               className={`mx-auto flex rounded border-0 py-2 px-8 text-lg focus:outline-none ${
                 darkMode
-                  ? "bg-gray-800 text-white hover:bg-gray-100"
-                  : "bg-gray-800 text-white hover:bg-gray-100"
+                  ? "bg-gray-800 text-white hover:bg-gray-100 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-gray-400"
+                  : "bg-gray-800 text-white hover:bg-gray-400 hover:text-gray-800"
               }`}
             >
               Send Message
@@ -131,7 +131,7 @@ const Contacto = ({ darkMode }) => {
 
           {/* Footer */}
           <div
-            className={`mt-8 w-full border-t p-2 pt-8 text-center ${
+            className={`mt-8 w-full p-2 pt-8 text-center ${
               darkMode ? "border-gray-800" : "border-gray-300"
             }`}
           >

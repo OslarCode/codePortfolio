@@ -1,6 +1,7 @@
 // src/components/MainContent.jsx
 import React from "react";
 import Project from "./Project";
+import Feature from "./Feature";
 
 const MainContent = ({ darkMode }) => {
   const projects = [
@@ -169,40 +170,8 @@ const MainContent = ({ darkMode }) => {
         </div>
       </section>
 
-      {/* Mentoring Section */}
-      <section id="contact-mentoring-education" className="mt-12 w-full">
-        <h2 className="text-2xl font-Playfair text-center text-gray-800 dark:text-gray-100 mb-6">
-          Mentoría y educación
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Mentoring Section */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <h3 className="text-2xl font-Raleway mb-2 text-gray-800 dark:text-gray-100">
-              Mentoría
-            </h3>
-            <p className="text-lg text-gray-900 dark:text-gray-300">
-              Como mentor especializado en nuevas tecnologías, guío a
-              estudiantes y profesionales en el dominio de las últimas
-              tendencias y herramientas tecnológicas. Con experiencia en
-              desarrollo web y pasión por la educación, ofrezco una perspectiva
-              única para ayudar a mis mentores a alcanzar sus objetivos.
-            </p>
-          </div>
-
-          {/* Education Section */}
-          <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <h3 className="text-2xl font-Raleway mb-2 text-gray-800 dark:text-gray-100">
-              Actualización
-            </h3>
-            <p className="text-lg text-gray-900 dark:text-gray-300">
-              Me esfuerzo por mantenerme actualizado en las últimas tendencias y
-              herramientas tecnológicas, desde desarrollo web con React y
-              Tailwind CSS hasta inteligencia artificial y aprendizaje
-              automático.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Feature Section */}
+      <Feature />
     </div>
   );
 };

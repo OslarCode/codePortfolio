@@ -1,3 +1,4 @@
+// src/components/Feature.jsx
 import React from "react";
 import {
   ChatBubbleOvalLeftIcon,

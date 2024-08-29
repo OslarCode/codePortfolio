@@ -106,7 +106,6 @@ const MainContent = ({ darkMode }) => {
           Proyectos Destacados
         </h2>
         <div className="flex flex-wrap justify-center gap-8">
-          {/* Projects 1 */}
           {projects.map((project, index) => (
             <div
               key={index}

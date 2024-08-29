@@ -95,7 +95,7 @@ const MainContent = ({ darkMode }) => {
             CSS y JavaScript. Me apasiona mejorar la experiencia del usuario y
             mantenerme al día con las últimas tendencias.
           </p>
-          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-800 border-0 rounded md:my-10 dark:bg-gray-700" />
         </div>
       </section>
 

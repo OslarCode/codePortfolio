@@ -37,7 +37,7 @@ const Navbar = ({ darkMode, setDarkMode, outlined }) => {
         <div className="hidden md:flex md:space-x-10">
           <a
             href="#"
-            className={`text-3xl font-Raleway  ${
+            className={`text-3xl font-Playfair  ${
               darkMode
                 ? `text-gray-300 hover:text-white ${
                     outlined ? "nav-item-outlined" : ""
@@ -53,7 +53,7 @@ const Navbar = ({ darkMode, setDarkMode, outlined }) => {
             to="contacto"
             smooth={true}
             duration={500}
-            className={`cursor-pointer text-3xl font-Raleway ${
+            className={`cursor-pointer text-3xl font-Playfair ${
               darkMode
                 ? `text-gray-300 hover:text-white ${
                     outlined ? "nav-item-outlined" : ""

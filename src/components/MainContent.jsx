@@ -7,7 +7,7 @@ const MainContent = ({ darkMode }) => {
     {
       title: "E-commerce React Store",
       description:
-        "Desarrollo de una tienda en línea completa utilizando React, Redux para la gestión del estado y Tailwind CSS para el diseño. Implementé funcionalidades como el carrito de compras, filtros de productos y un sistema de pago seguro. Este proyecto ayudó a aumentar las ventas en un 30% al proporcionar una experiencia de usuario fluida y moderna.",
+        "Tienda en línea con React, Redux y Tailwind CSS, incluyendo carrito de compras, filtros de productos y un sistema de pago seguro.",
       imageSrc: "/projects/pexels-pixabay-259200.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
@@ -15,7 +15,7 @@ const MainContent = ({ darkMode }) => {
     {
       title: "Portfolio Personal",
       description:
-        "Creación de un sitio web de portfolio para un diseñador gráfico utilizando React y Tailwind CSS. El sitio destaca los trabajos del diseñador con una galería interactiva y una sección de blog. Implementé una integración con un CMS headless para la gestión de contenido y optimicé el sitio para un rendimiento rápido y una carga eficiente. ",
+        "Sitio web de portfolio para un diseñador gráfico usando React y Tailwind CSS, con una galería interactiva, sección de blog e integración con un CMS headless.",
       imageSrc: "/projects/pexels-ann-h-45017-14936124.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
@@ -23,7 +23,7 @@ const MainContent = ({ darkMode }) => {
     {
       title: "Dashboard de Análisis de Datos",
       description:
-        "Desarrollo de un dashboard interactivo para la visualización de datos en tiempo real utilizando React y D3.js. El proyecto incluía gráficos dinámicos, tablas de datos y filtros avanzados para analizar grandes volúmenes de información. Implementé una API RESTful para la integración de datos y aseguré un rendimiento óptimo con técnicas de carga diferida.",
+        "Dashboard interactivo con React y D3.js para la visualización de datos en tiempo real, incluyendo gráficos dinámicos, tablas y filtros avanzados. ",
       imageSrc: "/projects/pexels-rdne-7948060.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
@@ -31,7 +31,7 @@ const MainContent = ({ darkMode }) => {
     {
       title: "Aplicación de Tareas",
       description:
-        "Implementación de una aplicación de gestión de tareas con una interfaz intuitiva usando React y Tailwind CSS. Incluye funcionalidades como agregar, editar y eliminar tareas, así como establecer recordatorios. Utilicé localStorage para la persistencia de datos y realicé pruebas exhaustivas para asegurar la robustez de la aplicación",
+        "Aplicación de gestión de tareas con React y Tailwind CSS, que permite agregar, editar, eliminar tareas y establecer recordatorios. Usé localStorage para la persistencia de datos.",
       imageSrc: "/projects/pexels-n-voitkevich-6120218.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
@@ -39,7 +39,7 @@ const MainContent = ({ darkMode }) => {
     {
       title: "Plataforma de Blog",
       description:
-        "Desarrollo de una plataforma de blogging donde los usuarios pueden publicar, editar y eliminar sus artículos. Utilicé React para la interfaz y Firebase para la autenticación y almacenamiento de datos. El proyecto incluye una función de comentarios y un sistema de categorías para facilitar la navegación.",
+        "Plataforma de blogging con React y Firebase, donde los usuarios pueden publicar, editar y eliminar artículos. La plataforma incluye autenticación, comentarios y un sistema de categorías para facilitar la navegación.",
       imageSrc: "/projects/pexels-pixabay-267389.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
@@ -47,7 +47,7 @@ const MainContent = ({ darkMode }) => {
     {
       title: "Aplicación de Seguimiento de Fitness",
       description:
-        "Creación de una aplicación para el seguimiento de actividades físicas y objetivos de fitness. La aplicación, construida con React y Tailwind CSS, permite a los usuarios registrar sus entrenamientos, establecer metas y realizar un seguimiento del progreso. Incluye gráficos interactivos para visualizar el rendimiento.",
+        "Aplicación de seguimiento de actividades físicas y objetivos de fitness con React y Tailwind CSS, que permite registrar entrenamientos, establecer metas y visualizar el progreso mediante gráficos interactivos.",
       imageSrc: "/projects/pexels-jonathanborba-14037022.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
@@ -55,7 +55,7 @@ const MainContent = ({ darkMode }) => {
     {
       title: "Sistema de Reservas",
       description:
-        "Desarrollo de un sistema de reservas para una cadena de restaurantes. Implementé una interfaz de usuario amigable con React y una API para la gestión de reservas en tiempo real. La solución incluye una vista de calendario, confirmaciones por correo electrónico y un panel de administración para gestionar las reservas.",
+        "Sistema de reservas para una cadena de restaurantes con una interfaz amigable en React y una API para la gestión en tiempo real.Incluye vista de calendario, confirmaciones por correo electrónico y un panel de administración para gestionar reservas.",
       imageSrc: "/projects/pexels-ionix08-540650-1648373.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
@@ -63,7 +63,7 @@ const MainContent = ({ darkMode }) => {
     {
       title: "Aplicación de Encuestas",
       description:
-        "Desarrollo de una aplicación para la creación y gestión de encuestas. Utilicé React para la interfaz y una base de datos NoSQL para almacenar las respuestas. La aplicación permite a los usuarios crear encuestas personalizadas, recopilar respuestas y ver estadísticas en tiempo real",
+        "Aplicación para crear y gestionar encuestas con React y una base de datos NoSQL. Los usuarios pueden crear encuestas personalizadas, recopilar respuestas y ver estadísticas en tiempo real.",
       imageSrc: "/projects/pexels-cottonbro-4065891.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
@@ -71,7 +71,7 @@ const MainContent = ({ darkMode }) => {
     {
       title: "Aplicación de Productividad",
       description:
-        "TodoList Pro es una aplicación de productividad que te permite gestionar tus tareas y proyectos de manera eficiente. La aplicación está diseñada para ayudarte a organizar tus tareas diarias, semanales y mensuales, y a mantener un registro de tus progresos",
+        "Aplicación de productividad diseñada para gestionar tareas y proyectos, ayudando a organizar actividades diarias, semanales y mensuales, y a mantener un registro de progresos.",
       imageSrc: "/projects/pexels-ijonrobles-2388936.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
@@ -86,28 +86,22 @@ const MainContent = ({ darkMode }) => {
     >
       {/* Hero Section */}
       <section id="hero" className="text-center">
-        <h1 className="text-4xl font-Raleway text-gray-800 dark:text-gray-100 mt-4 mb-4">
+        <h1 className="text-9xl font-Playfair text-gray-800 dark:text-gray-100 mt-12 mb-4">
           ¡Hola, soy Oslar!
         </h1>
         <div className="p-6 w-full">
-          <p className="text-lg max-w-3xl mx-auto text-gray-900 dark:text-gray-300">
-            Soy un desarrollador frontend con más de 5 años de experiencia en la
-            creación de interfaces web modernas y funcionales. Mi trayectoria
-            como freelance me ha permitido colaborar con una variedad de
-            clientes, desde startups hasta empresas consolidadas, ayudándoles a
-            llevar sus ideas a la realidad digital. Estoy especializado en
-            tecnologías como React, Tailwind CSS y JavaScript, y me apasiona
-            construir soluciones intuitivas y atractivas que mejoren la
-            experiencia del usuario. Cada proyecto es una oportunidad para
-            aprender y crecer, y me esfuerzo por estar al día con las últimas
-            tendencias y mejores prácticas en desarrollo web.
+          <p className="text-lg max-w-3xl mx-auto font-Madefor text-gray-900 dark:text-gray-300">
+            Desarrollador frontend con 5+ años de experiencia en React, Tailwind
+            CSS y JavaScript. Me apasiona mejorar la experiencia del usuario y
+            mantenerme al día con las últimas tendencias.
           </p>
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
         </div>
       </section>
 
       {/* Projects Section */}
       <section id="projects" className="mt-12 w-full">
-        <h2 className="text-3xl font-Raleway text-gray-800 dark:text-gray-100 mb-6">
+        <h2 className="text-2xl font-Raleway text-center font-Playfair text-gray-800 dark:text-gray-100 mb-6">
           Proyectos Destacados
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -127,7 +121,7 @@ const MainContent = ({ darkMode }) => {
 
       {/* Skills Section */}
       <section id="skills" className="mt-12 text-center w-full">
-        <h2 className="text-3xl font-Raleway text-gray-800 dark:text-gray-100 mb-6">
+        <h2 className="text-2xl font-Playfair text-gray-800 dark:text-gray-100 mb-6">
           Habilidades
         </h2>
 
@@ -173,7 +167,7 @@ const MainContent = ({ darkMode }) => {
 
       {/* Mentoring Section */}
       <section id="contact-mentoring-education" className="mt-12 w-full">
-        <h2 className="text-3xl font-Raleway text-center text-gray-800 dark:text-gray-100 mb-6">
+        <h2 className="text-2xl font-Playfair text-center text-gray-800 dark:text-gray-100 mb-6">
           Mentoría y educación
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

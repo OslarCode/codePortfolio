@@ -156,7 +156,7 @@ const MainContent = ({ darkMode }) => {
               alt="Tailwind CSS"
               className="w-8 h-8"
             />
-            <p className="mt-2 text-lg font-medium">Tailwind CSS</p>
+            <p className="mt-2 text-lg font-medium">Tailwind</p>
           </div>
           <div className="flex flex-col items-center">
             <img src="./icons/node.svg" alt="Node.js" className="w-8 h-8" />

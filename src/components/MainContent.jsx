@@ -104,17 +104,18 @@ const MainContent = ({ darkMode }) => {
         <h2 className="text-2xl font-Raleway text-center font-Playfair text-gray-800 dark:text-gray-100 mb-6">
           Proyectos Destacados
         </h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-wrap justify-center gap-8">
           {/* Projects 1 */}
           {projects.map((project, index) => (
-            <Project
-              key={index}
-              title={project.title}
-              description={project.description}
-              imageSrc={project.imageSrc}
-              link={project.link}
-              altText={project.altText}
-            />
+            <div key={index} className="w-full md:w-1/2 lg:w-1/3">
+              <Project
+                title={project.title}
+                description={project.description}
+                imageSrc={project.imageSrc}
+                link={project.link}
+                altText={project.altText}
+              />
+            </div>
           ))}
         </div>
       </section>

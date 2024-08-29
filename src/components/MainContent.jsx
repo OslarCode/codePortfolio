@@ -107,7 +107,10 @@ const MainContent = ({ darkMode }) => {
         <div className="flex flex-wrap justify-center gap-8">
           {/* Projects 1 */}
           {projects.map((project, index) => (
-            <div key={index} className="w-full md:w-1/2 lg:w-1/3">
+            <div
+              key={index}
+              className="w-full md:w-1/2 lg:w-1/3 flex items-stretch"
+            >
               <Project
                 title={project.title}
                 description={project.description}

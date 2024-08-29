@@ -22,6 +22,9 @@ export default {
       fontFamily: {
         Raleway: ["'Raleway'", "sans-serif"],
       },
+      fontWeight: {
+        thin: 200, // Define el peso de la fuente como "Thin"
+      },
       outline: {
         primary: "1px solid #1f2937", // Color del borde en modo oscuro
         secondary: "1px solid #f3f4f6", // Color del borde en modo claro

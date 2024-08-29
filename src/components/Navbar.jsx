@@ -19,10 +19,8 @@ const Navbar = ({ darkMode, setDarkMode, outlined }) => {
     <div
       className={`w-full px-4 sm:px-6 ${
         darkMode
-          ? `bg-gray-800 border-b border-gray-700 ${
-              outlined ? "navbar-outlined" : ""
-            }`
-          : `bg-white border-b border-gray-200 ${
+          ? `bg-gray-800 border-gray-700 ${outlined ? "navbar-outlined" : ""}`
+          : `bg-gray-100 border-gray-200 ${
               outlined ? "navbar-outlined-light" : ""
             }`
       } ${menuOpen ? "shadow-lg" : "shadow-none"} ${
@@ -35,26 +33,11 @@ const Navbar = ({ darkMode, setDarkMode, outlined }) => {
         }`}
         aria-label="Global"
       >
-        {/* Logo */}
-        <div className="flex items-center">
-          <a href="#">
-            <span className="sr-only">Company Name</span>
-            <img
-              className="w-auto h-8 sm:h-10"
-              src="web_designer_boy.png"
-              loading="lazy"
-              width="202"
-              height="40"
-              alt="Company Logo"
-            />
-          </a>
-        </div>
-
         {/* Links for large screens */}
         <div className="hidden md:flex md:space-x-10">
           <a
             href="#"
-            className={`text-base font-Raleway  ${
+            className={`text-3xl font-Raleway  ${
               darkMode
                 ? `text-gray-300 hover:text-white ${
                     outlined ? "nav-item-outlined" : ""
@@ -70,7 +53,7 @@ const Navbar = ({ darkMode, setDarkMode, outlined }) => {
             to="contacto"
             smooth={true}
             duration={500}
-            className={`cursor-pointer text-base font-Raleway ${
+            className={`cursor-pointer text-3xl font-Raleway ${
               darkMode
                 ? `text-gray-300 hover:text-white ${
                     outlined ? "nav-item-outlined" : ""

@@ -12,9 +12,10 @@ const Contacto = ({ darkMode }) => {
     >
       <div className="mb-12 flex w-full flex-col text-center">
         <h1
-          className={`title-font mb-6 text-6xl font-Playfair ${
+          className={`mb-6 font-Playfair ${
             darkMode ? "text-gray-100" : "text-gray-800"
-          } sm:text-3xl`}
+          }`}
+          style={{ fontSize: "4rem" }}
         >
           Contactame
         </h1>

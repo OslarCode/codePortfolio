@@ -26,6 +26,10 @@ export default {
       fontWeight: {
         thin: 400, // Define el peso de la fuente como "Thin"
       },
+      fontSize: {
+        "6xl": "4rem", // Tamaño grande para text-6xl
+        "3xl": "1.875rem", // Tamaño más pequeño para sm:text-3xl
+      },
     },
     screens: {
       sm: "640px",

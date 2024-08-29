@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 import { Link as ScrollLink } from "react-scroll";
 
-const Navbar = ({ darkMode, setDarkMode }) => {
+const Navbar = ({ darkMode, setDarkMode, outlined }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -19,8 +19,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <div
       className={`w-full px-4 sm:px-6 ${
         darkMode
-          ? "bg-gray-800 border-b border-gray-700"
-          : "bg-white border-b border-gray-200"
+          ? `bg-gray-800 border-b border-gray-700 ${
+              outlined ? "navbar-outlined" : ""
+            }`
+          : `bg-white border-b border-gray-200 ${
+              outlined ? "navbar-outlined-light" : ""
+            }`
       } ${menuOpen ? "shadow-lg" : "shadow-none"} ${
         menuOpen ? "py-4" : "py-2"
       } fixed top-0 left-0 right-0 z-50`}
@@ -52,8 +56,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             href="#"
             className={`text-base font-normal ${
               darkMode
-                ? "text-gray-300 hover:text-white"
-                : "text-gray-900 hover:text-gray-600"
+                ? `text-gray-300 hover:text-white ${
+                    outlined ? "nav-item-outlined" : ""
+                  }`
+                : `text-gray-900 hover:text-gray-600 ${
+                    outlined ? "nav-item-outlined-light" : ""
+                  }`
             }`}
           >
             Proyectos
@@ -64,8 +72,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             duration={500}
             className={`cursor-pointer text-base font-normal ${
               darkMode
-                ? "text-gray-300 hover:text-white"
-                : "text-gray-900 hover:text-gray-600"
+                ? `text-gray-300 hover:text-white ${
+                    outlined ? "nav-item-outlined" : ""
+                  }`
+                : `text-gray-900 hover:text-gray-600 ${
+                    outlined ? "nav-item-outlined-light" : ""
+                  }`
             }`}
           >
             Contacto
@@ -78,8 +90,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             onClick={handleThemeToggle}
             className={`inline-flex items-center justify-center p-2 rounded-full ${
               darkMode
-                ? "text-gray-400 hover:text-white bg-gray-700"
-                : "text-gray-500 hover:text-gray-900 bg-gray-200"
+                ? `text-gray-400 hover:text-white bg-gray-700 ${
+                    outlined ? "dark-mode-toggle-outlined" : ""
+                  }`
+                : `text-gray-500 hover:text-gray-900 bg-gray-200 ${
+                    outlined ? "dark-mode-toggle-outlined-light" : ""
+                  }`
             }`}
           >
             {darkMode ? (
@@ -132,8 +148,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           href="#"
           className={`block text-base font-normal ${
             darkMode
-              ? "text-gray-300 hover:text-white"
-              : "text-gray-900 hover:text-gray-600"
+              ? `text-gray-300 hover:text-white ${
+                  outlined ? "nav-item-outlined" : ""
+                }`
+              : `text-gray-900 hover:text-gray-600 ${
+                  outlined ? "nav-item-outlined-light" : ""
+                }`
           }`}
         >
           Proyectos
@@ -144,8 +164,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           duration={500}
           className={`cursor-pointer block text-base font-normal ${
             darkMode
-              ? "text-gray-300 hover:text-white"
-              : "text-gray-900 hover:text-gray-600"
+              ? `text-gray-300 hover:text-white ${
+                  outlined ? "nav-item-outlined" : ""
+                }`
+              : `text-gray-900 hover:text-gray-600 ${
+                  outlined ? "nav-item-outlined-light" : ""
+                }`
           }`}
         >
           Contacto
@@ -158,6 +182,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 Navbar.propTypes = {
   darkMode: PropTypes.bool.isRequired,
   setDarkMode: PropTypes.func.isRequired,
+  outlined: PropTypes.bool, // Nueva prop para controlar estilos outlined
 };
 
 export default Navbar;

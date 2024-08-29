@@ -25,7 +25,7 @@ function App() {
   return (
     <div className={`${darkMode ? "dark" : ""}`}>
       <div className="min-h-screen bg-white dark:bg-gray-900">
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} outlined={true} />
         {isLoading ? (
           <LoadingScreen onLoaded={handleLoadingComplete} />
         ) : (

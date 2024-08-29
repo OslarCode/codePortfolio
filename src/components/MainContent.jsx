@@ -86,10 +86,10 @@ const MainContent = ({ darkMode }) => {
     >
       {/* Hero Section */}
       <section id="hero" className="text-center">
-        <h1 className="text-4xl font-semibold text-blue-700 dark:text-blue-400 mt-4 mb-4">
+        <h1 className="text-4xl font-Raleway text-gray-800 dark:text-gray-100 mt-4 mb-4">
           ¡Hola, soy Oslar!
         </h1>
-        <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6">
+        <div className="p-6 w-full">
           <p className="text-lg max-w-3xl mx-auto text-gray-900 dark:text-gray-300">
             Soy un desarrollador frontend con más de 5 años de experiencia en la
             creación de interfaces web modernas y funcionales. Mi trayectoria
@@ -107,7 +107,7 @@ const MainContent = ({ darkMode }) => {
 
       {/* Projects Section */}
       <section id="projects" className="mt-12 w-full">
-        <h2 className="text-3xl font-semibold text-blue-700 dark:text-blue-400 mb-6">
+        <h2 className="text-3xl font-Raleway text-gray-800 dark:text-gray-100 mb-6">
           Proyectos Destacados
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -127,7 +127,7 @@ const MainContent = ({ darkMode }) => {
 
       {/* Skills Section */}
       <section id="skills" className="mt-12 text-center w-full">
-        <h2 className="text-3xl font-semibold text-blue-700 dark:text-blue-400 mb-6">
+        <h2 className="text-3xl font-Raleway text-gray-800 dark:text-gray-100 mb-6">
           Habilidades
         </h2>
 
@@ -173,13 +173,13 @@ const MainContent = ({ darkMode }) => {
 
       {/* Mentoring Section */}
       <section id="contact-mentoring-education" className="mt-12 w-full">
-        <h2 className="text-3xl font-semibold text-center text-blue-700 dark:text-blue-400 mb-6">
+        <h2 className="text-3xl font-Raleway text-center text-gray-800 dark:text-gray-100 mb-6">
           Mentoría y educación
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Mentoring Section */}
           <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
+            <h3 className="text-2xl font-Raleway mb-2 text-gray-800 dark:text-gray-100">
               Mentoría
             </h3>
             <p className="text-lg text-gray-900 dark:text-gray-300">
@@ -193,7 +193,7 @@ const MainContent = ({ darkMode }) => {
 
           {/* Education Section */}
           <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-xl">
-            <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
+            <h3 className="text-2xl font-Raleway mb-2 text-gray-800 dark:text-gray-100">
               Actualización
             </h3>
             <p className="text-lg text-gray-900 dark:text-gray-300">

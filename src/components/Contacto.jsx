@@ -13,7 +13,7 @@ const Contacto = ({ darkMode }) => {
       <div className="mb-12 flex w-full flex-col text-center">
         <h1
           className={`title-font mb-6 text-3xl font-semibold ${
-            darkMode ? "text-blue-400" : "text-blue-700"
+            darkMode ? "text-gray-100" : "text-gray-800"
           } sm:text-3xl`}
         >
           Contactame
@@ -121,8 +121,8 @@ const Contacto = ({ darkMode }) => {
             <button
               className={`mx-auto flex rounded border-0 py-2 px-8 text-lg focus:outline-none ${
                 darkMode
-                  ? "bg-blue-700 text-white hover:bg-blue-400"
-                  : "bg-blue-700 text-white hover:bg-blue-400"
+                  ? "bg-gray-800 text-white hover:bg-gray-100"
+                  : "bg-gray-800 text-white hover:bg-gray-100"
               }`}
             >
               Send Message

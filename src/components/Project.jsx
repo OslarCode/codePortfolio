@@ -11,7 +11,7 @@ const Project = ({ title, description, imageSrc, link, altText }) => {
           className="w-full lg:w-1/3 rounded-lg object-cover mb-4 lg:mb-0 lg:mr-6"
         />
         <div>
-          <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
+          <h3 className="text-2xl font-Raleway mb-2 text-gray-800 dark:text-gray-100">
             {title}
           </h3>
           <p className="text-gray-700 dark:text-gray-300">

@@ -7,8 +7,8 @@ export default {
     extend: {
       colors: {
         primary: {
-          light: "#4a90e2",
-          dark: "#1e3a8a",
+          light: "#1f2937",
+          dark: "#f3f4f6",
         },
         background: {
           light: "#f9f9f9",
@@ -19,10 +19,12 @@ export default {
           dark: "#e5e7eb",
         },
       },
-      // Añadimos estilos outlined personalizados
+      fontFamily: {
+        Raleway: ["'Raleway'", "sans-serif"],
+      },
       outline: {
-        primary: "1px solid #1e3a8a", // Color del borde en modo oscuro
-        secondary: "1px solid #4a90e2", // Color del borde en modo claro
+        primary: "1px solid #1f2937", // Color del borde en modo oscuro
+        secondary: "1px solid #f3f4f6", // Color del borde en modo claro
       },
     },
     screens: {

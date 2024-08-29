@@ -54,7 +54,7 @@ const Navbar = ({ darkMode, setDarkMode, outlined }) => {
         <div className="hidden md:flex md:space-x-10">
           <a
             href="#"
-            className={`text-base font-normal ${
+            className={`text-base font-Raleway  ${
               darkMode
                 ? `text-gray-300 hover:text-white ${
                     outlined ? "nav-item-outlined" : ""
@@ -70,7 +70,7 @@ const Navbar = ({ darkMode, setDarkMode, outlined }) => {
             to="contacto"
             smooth={true}
             duration={500}
-            className={`cursor-pointer text-base font-normal ${
+            className={`cursor-pointer text-base font-Raleway ${
               darkMode
                 ? `text-gray-300 hover:text-white ${
                     outlined ? "nav-item-outlined" : ""
@@ -93,7 +93,7 @@ const Navbar = ({ darkMode, setDarkMode, outlined }) => {
                 ? `text-gray-400 hover:text-white bg-gray-700 ${
                     outlined ? "dark-mode-toggle-outlined" : ""
                   }`
-                : `text-gray-500 hover:text-gray-900 bg-gray-200 ${
+                : `text-gray-500 hover:text-gray-900 border-2 ${
                     outlined ? "dark-mode-toggle-outlined-light" : ""
                   }`
             }`}

@@ -1,12 +1,6 @@
-![Captura de Pantalla](assets/screencapture-localhost-5173-2024-08-29-21_18_48.png)
-
----
-
 # Mi Portfolio
 
 ¡Bienvenido a mi portfolio! Este repositorio contiene la aplicación de mi portafolio personal, donde muestro mis proyectos, habilidades y contacto. La aplicación está diseñada para proporcionar una visión general de mi trabajo y facilitar el contacto con posibles clientes o empleadores.
-
-![Captura de Pantalla](public/screencapture-localhost-5173-2024-08-29-21_18_48.png)
 
 ## Descripción
 

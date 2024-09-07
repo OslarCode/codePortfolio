@@ -2,6 +2,10 @@
 
 ¡Bienvenido a mi portfolio! Este repositorio contiene la aplicación de mi portafolio personal, donde muestro mis proyectos, habilidades y contacto. La aplicación está diseñada para proporcionar una visión general de mi trabajo y facilitar el contacto con posibles clientes o empleadores.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f0a2e205d34832803eb3ac7a27c214b9b47fb0a2
 ## Descripción
 
 Este es un portfolio interactivo creado con React y Tailwind CSS. La aplicación incluye secciones destacadas para proyectos, habilidades y un formulario de contacto. Está optimizada para ofrecer una experiencia de usuario moderna y responsiva en diferentes dispositivos.

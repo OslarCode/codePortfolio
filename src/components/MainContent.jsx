@@ -88,7 +88,7 @@ const MainContent = ({ darkMode }) => {
       {/* Hero Section */}
       <section id="hero" className="text-center">
         <h1 className="text-9xl font-Playfair text-gray-800 dark:text-gray-100 mt-12 mb-4">
-          ¡Hola, soy Oslar!
+          ¡Hola, soy John Doe!
         </h1>
         <div className="p-6 w-full">
           <p className="text-lg max-w-3xl mx-auto font-Madefor text-gray-900 dark:text-gray-300">

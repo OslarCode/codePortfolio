@@ -139,7 +139,7 @@ const Contacto = ({ darkMode }) => {
             <a
               className={`${darkMode ? "text-indigo-400" : "text-indigo-500"}`}
             >
-              oslar1980@gmail.com
+              JohnDoe@gmail.com
             </a>
             <p className="my-5 leading-normal"></p>
             <span className="inline-flex">

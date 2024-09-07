@@ -6,7 +6,6 @@ import Contacto from "./components/Contacto";
 import PropTypes from "prop-types";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {

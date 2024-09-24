@@ -21,7 +21,7 @@ const Project = ({ title, description, imageSrc, link, altText }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            aquí
+            Here
           </a>
           .
         </p>

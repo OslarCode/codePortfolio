@@ -17,12 +17,12 @@ const Contacto = ({ darkMode }) => {
           }`}
           style={{ fontSize: "4rem" }}
         >
-          Contactame
+          連絡してください
         </h1>
         <p className="mx-auto text-base font-Madefor leading-relaxed lg:w-2/3">
-          Estoy disponible para nuevas oportunidades y colaboraciones. Si estás
-          interesado en trabajar conmigo o simplemente quieres decir hola, no
-          dudes en contactarme.
+          新しい機会やコラボレーションに応じます。あなたがそうであれば
+          私と一緒に仕事をすることに興味がある、または単に挨拶したいだけです、いいえ
+          お気軽にご連絡ください。
         </p>
       </div>
 

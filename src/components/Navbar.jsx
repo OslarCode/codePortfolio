@@ -47,7 +47,7 @@ const Navbar = ({ darkMode, setDarkMode, outlined }) => {
                   }`
             }`}
           >
-            Proyectos
+            Projects
           </a>
           <ScrollLink
             to="contacto"
@@ -63,7 +63,7 @@ const Navbar = ({ darkMode, setDarkMode, outlined }) => {
                   }`
             }`}
           >
-            Contacto
+            Contact
           </ScrollLink>
         </div>
 
@@ -139,7 +139,7 @@ const Navbar = ({ darkMode, setDarkMode, outlined }) => {
                 }`
           }`}
         >
-          Proyectos
+          Projects
         </a>
         <ScrollLink
           to="contacto"
@@ -155,7 +155,7 @@ const Navbar = ({ darkMode, setDarkMode, outlined }) => {
                 }`
           }`}
         >
-          Contacto
+          Contact
         </ScrollLink>
       </div>
     </div>

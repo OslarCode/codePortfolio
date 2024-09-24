@@ -15,16 +15,13 @@ const Feature = () => {
       >
         <div className="relative mx-auto max-w-5xl text-center">
           <span className="my-3 flex items-center justify-center font-Playfair text-2xl text-gray-800 dark:text-gray-100">
-            Why choose me
+            なぜ私を選ぶのか
           </span>
           <h2 className="text-black font-Playfair text-3xl sm:text-4xl dark:text-gray-100">
-            Experiencia, Personalización y Resultados que Impulsarán tu Éxito
+            成功を促進する経験、パーソナライゼーション、結果
           </h2>
           <p className="mx-auto my-4 w-full max-w-xl text-center font-Madefor text-gray-600 dark:text-gray-100">
-            Si buscas un programador web comprometido, experimentado y orientado
-            a resultados, no dudes en contactarme. Estoy emocionado por la
-            oportunidad de trabajar contigo y ayudar a llevar tu presencia en
-            línea al siguiente nivel.
+            容ル局6窓どらつか後程めルそ口展ひ業護っまや験見チ向注ユエ麓報マソヒユ豊越ノオエ弱祭フテスヒ嶺件皇ユコモ米3演こー控4侮冗きゆり。丁ソシヱル紙価り果経断ずろ事移指中こる画商なる教安ぎへね政快スくり汰復際京ろ目氏め一験キサトウ必勝ン玉無期熊習ゆ。田ワハニ組気純レクネヒ権氏しリづ校康ナシク下29重ムチワ戦偉づえろぎ営決コヤツロ県能へし定作タ社佐エ陸算幹秋豊らど。
           </p>
         </div>
         <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
@@ -34,25 +31,16 @@ const Feature = () => {
             </div>
             <h3 className="mt-6 text-black dark:text-gray-100">Mentoría</h3>
             <p className="my-4 mb-0 font-Madefor text-gray-600 dark:text-gray-100">
-              Como mentor especializado en nuevas tecnologías, guío a
-              estudiantes y profesionales en el dominio de las últimas
-              tendencias y herramientas tecnológicas. Con experiencia en
-              desarrollo web y pasión por la educación, ofrezco una perspectiva
-              única para ayudar a mis mentores a alcanzar sus objetivos.
+              容ル局6窓どらつか後程めルそ口展ひ業護っまや験見チ向注ユエ麓報マソヒユ豊越ノオエ弱祭フテスヒ嶺件皇ユコモ米3演こー控4侮冗きゆり。丁ソシヱル紙価り果経断ずろ事移指中こる画商なる教安ぎへね政快スくり汰復際京ろ目氏め一験キサトウ必勝ン玉無期熊習ゆ。田ワハニ組気純レクネヒ権氏しリづ校康ナシク下29重ムチワ戦偉づえろぎ営決コヤツロ県能へし定作タ社佐エ陸算幹秋豊らど。
             </p>
           </div>
           <div className="rounded-md border border-black dark:bg-gray-800 dark:border-gray-100 p-8 text-center">
             <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-md border bg-gray-300">
               <BoltIcon className="w-6 h-6 text-black" />
             </div>
-            <h3 className="mt-6 text-black dark:text-gray-100">
-              Actualización
-            </h3>
+            <h3 className="mt-6 text-black dark:text-gray-100">アップデート</h3>
             <p className="my-4 mb-0 font-Madefor text-gray-600 dark:text-gray-100">
-              Me esfuerzo por mantenerme actualizado en las últimas tendencias y
-              herramientas tecnológicas, desde desarrollo web con React y
-              Tailwind CSS hasta inteligencia artificial y aprendizaje
-              automático.
+              容ル局6窓どらつか後程めルそ口展ひ業護っまや験見チ向注ユエ麓報マソヒユ豊越ノオエ弱祭フテスヒ嶺件皇ユコモ米3演こー控4侮冗きゆり。丁ソシヱル紙価り果経断ずろ事移指中こる画商なる教安ぎへね政快スくり汰復際京ろ目氏め一験キサトウ必勝ン玉無期熊習ゆ。田ワハニ組気純レクネヒ権氏しリづ校康ナシク下29重ムチワ戦偉づえろぎ営決コヤツロ県能へし定作タ社佐エ陸算幹秋豊らど。
             </p>
           </div>
           <div className="rounded-md border border-black dark:bg-gray-800 dark:border-gray-100 p-8 text-center">
@@ -60,14 +48,10 @@ const Feature = () => {
               <WrenchScrewdriverIcon className="w-6 h-6 text-black" />
             </div>
             <h3 className="mt-6 text-black dark:text-gray-100">
-              Personalizado
+              パーソナライズされた
             </h3>
             <p className="my-4 mb-0 font-Madefor text-gray-600 dark:text-gray-100">
-              Entiendo que cada negocio es único, y creo soluciones web que se
-              adaptan específicamente a tus necesidades. No ofrezco plantillas
-              genéricas; en su lugar, desarrollo estrategias y diseños a medida
-              que reflejan tu marca y objetivos, garantizando una solución que
-              realmente funcione para ti.
+              容ル局6窓どらつか後程めルそ口展ひ業護っまや験見チ向注ユエ麓報マソヒユ豊越ノオエ弱祭フテスヒ嶺件皇ユコモ米3演こー控4侮冗きゆり。丁ソシヱル紙価り果経断ずろ事移指中こる画商なる教安ぎへね政快スくり汰復際京ろ目氏め一験キサトウ必勝ン玉無期熊習ゆ。田ワハニ組気純レクネヒ権氏しリづ校康ナシク下29重ムチワ戦偉づえろぎ営決コヤツロ県能へし定作タ社佐エ陸算幹秋豊らど。
             </p>
           </div>
         </div>

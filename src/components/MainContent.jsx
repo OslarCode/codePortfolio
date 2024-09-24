@@ -8,71 +8,71 @@ const MainContent = ({ darkMode }) => {
     {
       title: "E-commerce React Store",
       description:
-        "Tienda en línea con React, Redux y Tailwind CSS, incluyendo carrito de compras, filtros de productos y un sistema de pago seguro.",
+        "Online store with React, Redux and Tailwind CSS, including shopping cart, product filters and a secure payment system.",
       imageSrc: "/projects/pexels-pixabay-259200.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
     },
     {
-      title: "Portfolio Personal",
+      title: "Personal Portfolio",
       description:
-        "Sitio web de portfolio para un diseñador gráfico usando React y Tailwind CSS, con una galería interactiva, sección de blog e integración con un CMS headless.",
+        "Portfolio website for a graphic designer using React and Tailwind CSS, with an interactive gallery, blog section and integration with a headless CMS.",
       imageSrc: "/projects/pexels-ann-h-45017-14936124.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
     },
     {
-      title: "Dashboard de Análisis de Datos",
+      title: "Data Analysis Dashboard",
       description:
-        "Dashboard interactivo con React y D3.js para la visualización de datos en tiempo real, incluyendo gráficos dinámicos, tablas y filtros avanzados. ",
+        "Interactive dashboard with React and D3.js for real-time data visualization, including dynamic graphs, tables and advanced filters.",
       imageSrc: "/projects/pexels-rdne-7948060.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
     },
     {
-      title: "Aplicación de Tareas",
+      title: "Task Application",
       description:
-        "Aplicación de gestión de tareas con React y Tailwind CSS, que permite agregar, editar, eliminar tareas y establecer recordatorios. Usé localStorage para la persistencia de datos.",
+        "Task management application with React and Tailwind CSS, allowing you to add, edit, delete tasks and set reminders. I used localStorage for data persistence.",
       imageSrc: "/projects/pexels-n-voitkevich-6120218.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
     },
     {
-      title: "Plataforma de Blog",
+      title: "Blog Platform",
       description:
-        "Plataforma de blogging con React y Firebase, donde los usuarios pueden publicar, editar y eliminar artículos. La plataforma incluye autenticación, comentarios y un sistema de categorías para facilitar la navegación.",
+        "Blogging platform with React and Firebase, where users can publish, edit and delete articles. The platform includes authentication, comments, and a category system for easy navigation.",
       imageSrc: "/projects/pexels-pixabay-267389.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
     },
     {
-      title: "Aplicación de Seguimiento de Fitness",
+      title: "Fitness Tracker App",
       description:
-        "Aplicación de seguimiento de actividades físicas y objetivos de fitness con React y Tailwind CSS, que permite registrar entrenamientos, establecer metas y visualizar el progreso mediante gráficos interactivos.",
+        "Physical activity and fitness goal tracking application with React and Tailwind CSS, which allows you to record workouts, set goals, and view progress using interactive graphics.",
       imageSrc: "/projects/pexels-jonathanborba-14037022.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
     },
     {
-      title: "Sistema de Reservas",
+      title: "Reservation System",
       description:
-        "Sistema de reservas para una cadena de restaurantes con una interfaz amigable en React y una API para la gestión en tiempo real.Incluye vista de calendario, confirmaciones por correo electrónico y un panel de administración para gestionar reservas.",
+        "Reservation system for a restaurant chain with a friendly interface in React and an API for real-time management. Includes calendar view, email confirmations and an administration panel to manage reservations.",
       imageSrc: "/projects/pexels-ionix08-540650-1648373.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
     },
     {
-      title: "Aplicación de Encuestas",
+      title: "Survey Application",
       description:
-        "Aplicación para crear y gestionar encuestas con React y una base de datos NoSQL. Los usuarios pueden crear encuestas personalizadas, recopilar respuestas y ver estadísticas en tiempo real.",
+        "Application to create and manage surveys with React and a NoSQL database. Users can create custom surveys, collect responses, and view real-time statistics.",
       imageSrc: "/projects/pexels-cottonbro-4065891.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
     },
     {
-      title: "Aplicación de Productividad",
+      title: "Productivity Application",
       description:
-        "Aplicación de productividad diseñada para gestionar tareas y proyectos, ayudando a organizar actividades diarias, semanales y mensuales, y a mantener un registro de progresos.",
+        "Productivity application designed to manage tasks and projects, helping to organize daily, weekly and monthly activities, and keep track of progress.",
       imageSrc: "/projects/pexels-ijonrobles-2388936.jpg",
       link: "https://ecommerce-example.com",
       altText: "E-commerce React Store",
@@ -88,13 +88,11 @@ const MainContent = ({ darkMode }) => {
       {/* Hero Section */}
       <section id="hero" className="text-center">
         <h1 className="text-9xl font-Playfair text-gray-800 dark:text-gray-100 mt-12 mb-4">
-          ¡Hola, soy John Doe!
+          こんにちは、ジョン・ドゥです！
         </h1>
         <div className="p-6 w-full">
           <p className="text-lg max-w-3xl mx-auto font-Madefor text-gray-900 dark:text-gray-300">
-            Desarrollador frontend con 5+ años de experiencia en React, Tailwind
-            CSS y JavaScript. Me apasiona mejorar la experiencia del usuario y
-            mantenerme al día con las últimas tendencias.
+            容ル局6窓どらつか後程めルそ口展ひ業護っまや験見チ向注ユエ麓報マソヒユ豊越ノオエ弱祭フテスヒ嶺件皇ユコモ米3演こー控4侮冗きゆり。丁ソシヱル紙価り果経断ずろ事移指中こる画商なる教安ぎへね政快スくり汰復際京ろ目氏め一験キサトウ必勝ン玉無期熊習ゆ。田ワハニ組気純レクネヒ権氏しリづ校康ナシク下29重ムチワ戦偉づえろぎ営決コヤツロ県能へし定作タ社佐エ陸算幹秋豊らど。
           </p>
           <hr className="w-48 h-1 mx-auto my-4 bg-gray-800 border-0 rounded md:my-10 dark:bg-gray-700" />
         </div>
@@ -103,7 +101,7 @@ const MainContent = ({ darkMode }) => {
       {/* Projects Section */}
       <section id="projects" className="mt-12 w-full">
         <h2 className="text-2xl font-Raleway text-center font-Playfair text-gray-800 dark:text-gray-100 mb-6">
-          Proyectos Destacados
+          注目のプロジェクト
         </h2>
         <div className="flex flex-wrap justify-center gap-8">
           {projects.map((project, index) => (
@@ -126,7 +124,7 @@ const MainContent = ({ darkMode }) => {
       {/* Skills Section */}
       <section id="skills" className="mt-12 text-center w-full">
         <h2 className="text-2xl font-Playfair text-gray-800 dark:text-gray-100 mb-6">
-          Habilidades
+          スキル
         </h2>
 
         <div className="flex flex-wrap justify-center gap-8">

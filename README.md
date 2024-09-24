@@ -1,4 +1,4 @@
-# 🚀 Mi Portfolio Personal
+# 🚀 Portfolio Personal
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/tuusuario/tu-portfolio)
 ![GitHub license](https://img.shields.io/github/license/tuusuario/tu-portfolio)

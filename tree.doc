@@ -1,0 +1,32 @@
+📦src
+ ┣ 📂assets
+ ┃ ┣ 📂icons
+ ┃ ┣ 📂projects
+ ┃ ┣ 📂social
+ ┃ ┗ 📜react.svg
+ ┣ 📂components
+ ┃ ┣ 📂layout
+ ┃ ┃ ┣ 📜Footer.jsx
+ ┃ ┃ ┗ 📜Navbar.jsx
+ ┃ ┣ 📂sections
+ ┃ ┃ ┣ 📜Contact.jsx
+ ┃ ┃ ┣ 📜Features.jsx
+ ┃ ┃ ┣ 📜Hero.jsx
+ ┃ ┃ ┣ 📜Projects.jsx
+ ┃ ┃ ┗ 📜Skill.jsx
+ ┃ ┣ 📂ui
+ ┃ ┃ ┣ 📜DarkModeToggle.jsx
+ ┃ ┃ ┣ 📜ProjectCard.jsx
+ ┃ ┃ ┗ 📜ScrollRevealWrapper.jsx
+ ┃ ┗ 📜MainContent.jsx
+ ┣ 📂hooks
+ ┃ ┣ 📜useDarkMode.js
+ ┃ ┗ 📜useScrollReveal.js
+ ┣ 📂pages
+ ┃ ┣ 📜Home.jsx
+ ┃ ┗ 📜NotFound.jsx
+ ┣ 📂styles
+ ┃ ┣ 📜App.css
+ ┃ ┗ 📜index.css
+ ┣ 📜App.jsx
+ ┗ 📜main.jsx

@@ -1,35 +1,28 @@
 // src/App.jsx
-import { useState, useEffect } from "react";
-import MainContent from "./components/MainContent";
-import Navbar from "./components/Navbar";
-import Contacto from "./components/Contacto";
-import PropTypes from "prop-types";
+import { Routes, Route } from "react-router-dom";
+import useDarkMode from "./hooks/useDarkMode";
+import Navbar from "./components/layout/Navbar";
+import Home from "./pages/Home";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode]);
+  const [darkMode, setDarkMode] = useDarkMode();
 
   return (
-    <div className={`${darkMode ? "dark" : ""}`}>
-      <div className="min-h-screen bg-white dark:bg-gray-900">
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} outlined={true} />
-        isLoading ? () : <MainContent darkMode={darkMode} />
-        <Contacto darkMode={darkMode} />
+    <div className={darkMode ? "dark" : ""}>
+      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} outlined />
+        <Routes>
+          <Route path="/" element={<Home darkMode={darkMode} />} />
+          <Route
+            path="*"
+            element={
+              <div className="p-8 text-center">Página no encontrada</div>
+            }
+          />
+        </Routes>
       </div>
     </div>
   );
 }
-
-App.propTypes = {
-  darkMode: PropTypes.bool.isRequired,
-  setDarkMode: PropTypes.func.isRequired,
-};
 
 export default App;

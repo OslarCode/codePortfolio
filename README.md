@@ -1,82 +1,121 @@
-# 🚀 Portfolio Personal
+# 🚀 Portfolio Profesional – Oslar.dev
 
-![GitHub last commit](https://img.shields.io/github/last-commit/tuusuario/tu-portfolio)
-![GitHub license](https://img.shields.io/github/license/tuusuario/tu-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/tuusuario/tu-portfolio?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/oslar/code-portfolio)
+![GitHub license](https://img.shields.io/github/license/oslar/code-portfolio)
+![GitHub stars](https://img.shields.io/github/stars/oslar/code-portfolio?style=social)
 
-Bienvenido a mi portfolio personal, donde muestro mis proyectos y habilidades como desarrollador web. 👨‍💻
+Portfolio profesional desarrollado con tecnologías modernas, enfocado en la captación de clientes freelance. Este proyecto es una muestra de diseño limpio, accesible y responsivo, preparado para escalar como PWA.
+
+---
 
 ## 📋 Contenido
 
 - [🚀 Características](#características)
 - [🛠️ Tecnologías](#tecnologías)
+- [📦 Estructura del proyecto](#estructura-del-proyecto)
 - [⚙️ Instalación](#instalación)
 - [🖥️ Uso](#uso)
 - [📄 Licencia](#licencia)
 - [📞 Contacto](#contacto)
 
+---
+
 ## 🚀 Características
 
-- Diseño responsive 📱💻
-- Sección de proyectos destacados 🏆
-- Información sobre mis habilidades y experiencia 🧠
-- Formulario de contacto 📬
+- ✅ Diseño mobile-first con modo claro/oscuro
+- ✅ Animaciones suaves con Framer Motion
+- ✅ Cards de proyectos dinámicas y escalables
+- ✅ Scroll Reveal para mejorar UX
+- ✅ Sección de contacto accesible y semántica
+- ✅ Página personalizada de error 404
+- ✅ Modularización de componentes por carpetas (`layout/`, `ui/`, `sections/`, `hooks/`)
+- ⏳ Preparado para conversión a PWA con soporte offline
+
+---
 
 ## 🛠️ Tecnologías
 
-Este proyecto está construido con las siguientes tecnologías:
+El proyecto utiliza:
 
-- HTML5
-- CSS3
-- JavaScript
-- [Nombre del framework o librería que hayas usado, por ejemplo: React, Vue, etc.]
+- Vite.js
+- React 18+
+- Tailwind CSS 3+
+- React Router DOM
+- Framer Motion
+- ESLint + configuración moderna
+- Arquitectura modular basada en componentes y páginas
+
+---
+
+## 📦 Estructura del proyecto
+
+\`\`\`bash
+src/
+├── assets/ # Íconos, imágenes, SVGs
+├── components/
+│ ├── layout/ # Navbar, Footer
+│ ├── sections/ # Hero, Projects, Skills, Features, Contact
+│ ├── ui/ # ScrollRevealWrapper, ProjectCard, Toggle
+├── hooks/ # useDarkMode, useScrollReveal
+├── pages/ # Home, NotFound
+├── styles/ # index.css
+├── App.jsx
+└── main.jsx
+\`\`\`
+
+---
 
 ## ⚙️ Instalación
 
-Para ejecutar este proyecto localmente, sigue estos pasos:
-
 1. Clona este repositorio:
 
-   ```
-   git clone https://github.com/tuusuario/tu-portfolio.git
-   ```
+\`\`\`bash
+git clone https://github.com/oslar/code-portfolio.git
+cd code-portfolio
+\`\`\`
 
-2. Navega al directorio del proyecto:
+2. Instala las dependencias:
 
-   ```
-   cd tu-portfolio
-   ```
+\`\`\`bash
+npm install
+\`\`\`
 
-3. Instala las dependencias:
+3. Inicia el servidor de desarrollo:
 
-   ```
-   npm install
-   ```
+\`\`\`bash
+npm run dev
+\`\`\`
 
-4. Inicia el servidor de desarrollo:
+4. Abre tu navegador en \`http://localhost:5173\`
 
-   ```
-   npm run dev
-   ```
-
-5. Abre tu navegador y visita `http://localhost:3000`
+---
 
 ## 🖥️ Uso
 
-Una vez que el proyecto esté corriendo localmente, puedes navegar por las diferentes secciones del portfolio para ver mis proyectos, habilidades y información de contacto.
+Explora las secciones del portfolio para ver:
+
+- Proyectos destacados
+- Habilidades principales
+- Características de valor añadido
+- Formulario de contacto funcional (en construcción)
+- Página 404 animada
+
+---
 
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
+---
+
 ## 📞 Contacto
 
-Si tienes alguna pregunta o quieres colaborar, no dudes en contactarme:
+Si tienes alguna pregunta, propuesta o quieres colaborar:
 
-- Email: tu@email.com
-- LinkedIn: [Tu Nombre](https://www.linkedin.com/in/tu-perfil)
-- Twitter: [@tuusuario](https://twitter.com/tuusuario)
+- Email: contacto@oslar.dev
+- LinkedIn: [linkedin.com/in/oslar](https://www.linkedin.com/in/oslar)
+- Twitter: [@oslar_dev](https://twitter.com/oslar_dev)
 
 ---
 
-⭐️ ¡No olvides dejar una estrella si te ha gustado este proyecto! ⭐️
+⭐️ ¡No olvides dejar una estrella si te ha gustado el proyecto! ⭐️

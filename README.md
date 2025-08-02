@@ -114,7 +114,7 @@ Si tienes alguna pregunta, propuesta o quieres colaborar:
 
 - Email: contacto@oslar.dev
 - LinkedIn: [linkedin.com/in/oslar](https://www.linkedin.com/in/oslar)
-- Twitter: [@oslar_dev](https://twitter.com/oslar_dev)
+
 
 ---
 
